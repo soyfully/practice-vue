@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'OPTIImprovNewWideNine';
+    src: url('../assets/font/OPTIImprovNewWideNine.otf') format('opentype'), url('../assets/font/GothaProLig.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothaProLig';
+    src: url('../assets/font/GothaProLig.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothaProBol';
+    src: url('../assets/font/GothaProBol.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('../assets/font/NotoSansKR-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('../assets/font/NotoSansKR-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('../assets/font/NotoSansKR-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('../assets/font/NanumGothic.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('../assets/font/NanumGothicBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('../assets/font/NanumGothicExtraBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 800;
+}
