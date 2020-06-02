@@ -28,15 +28,17 @@
                             <div class='img'>
                                 <img src="" alt="">
                             </div>
-                            <div class='plugin-explane'>
-                                <div class="title">
-                                    다양한 플러그인
-                                </div>
-                                <div class="explane">
-                                    스와이퍼, 스크롤 매직 등 다양한 라이브러리 / 플러그인을 활용해<br>
-                                    크로스 브라우징 또는 반응형 작업 시 생기는 오류를 잡았습니다. <br>
-                                    API 를 참고해 사용 방법을 숙지하고, 프로젝트에 맞게<br>
-                                    확장하여 수월히 작업하였습니다.
+                            <div class='plugin-explane new-explane'>
+                                <div class="plugin-explane-cnt">
+                                    <div class="title">
+                                        다양한 플러그인
+                                    </div>
+                                    <div class="explane">
+                                        스와이퍼, 스크롤 매직 등 다양한 라이브러리 / 플러그인을 활용해<br>
+                                        크로스 브라우징 또는 반응형 작업 시 생기는 오류를 잡았습니다. <br>
+                                        API 를 참고해 사용 방법을 숙지하고, 프로젝트에 맞게<br>
+                                        확장하여 수월히 작업하였습니다.
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -44,15 +46,17 @@
                             <div class='img'>
                                 <img src="" alt="">
                             </div>
-                            <div class='script-explane'>
-                                <div class="title">
-                                    코드 모듈화 및 은닉
-                                </div>
-                                <div class="explane">
-                                    코드 재사용을 위해 모듈화하여 data 에 저장 후<br>
-                                    윈도우 리사이즈를 실행하거나 개발 시 쉽게 불러올 수 있도록<br>
-                                    작성하였습니다. 또, 변수와 함수의 중복 선언을<br>
-                                    막기 위해 코드를 은닉화하여 유지 보수가 수월합니다.
+                            <div class='script-explane new-explane'>
+                                <div class="plugin-explane-cnt">
+                                    <div class="title">
+                                        코드 모듈화 및 은닉
+                                    </div>
+                                    <div class="explane">
+                                        코드 재사용을 위해 모듈화하여 data 에 저장 후<br>
+                                        윈도우 리사이즈를 실행하거나 개발 시 쉽게 불러올 수 있도록<br>
+                                        작성하였습니다. 또, 변수와 함수의 중복 선언을<br>
+                                        막기 위해 코드를 은닉화하여 유지 보수가 수월합니다.
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -60,15 +64,17 @@
                             <div class='img'>
                                 <img src="" alt="">
                             </div>
-                            <div class='motion-explane'>
-                                <div class="title">
-                                    모션 인터렉션
-                                </div>
-                                <div class="explane">
-                                    디자이너와의 협업을 통해 원하는 모션을 구현했습니다.<br>
-                                    주로 CSS 트랜지션, 키프레임을 적용한 클래스를 활용했으며<br>
-                                    CSS 로 작업하기 까다로운 부분만 GSAP 를 사용해<br>
-                                    무겁지 않게, 또 성능에 문제가 없도록 작업했습니다.
+                            <div class='motion-explane new-explane'>
+                                <div class="plugin-explane-cnt">
+                                    <div class="title">
+                                        모션 인터렉션
+                                    </div>
+                                    <div class="explane">
+                                        디자이너와의 협업을 통해 원하는 모션을 구현했습니다.<br>
+                                        주로 CSS 트랜지션, 키프레임을 적용한 클래스를 활용했으며<br>
+                                        CSS 로 작업하기 까다로운 부분만 GSAP 를 사용해<br>
+                                        무겁지 않게, 또 성능에 문제가 없도록 작업했습니다.
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -76,16 +82,18 @@
                             <div class='img'>
                                 <img src="" alt="">
                             </div>
-                            <div class='a11y-explane'>
-                                <div class="title">
-                                    웹 표준 준수 및 <br>
-                                    접근성 마크 획득
-                                </div>
-                                <div class="explane">
-                                    마크업을 선형화하고 시맨틱 태그를 사용하여 표준을 준수합니다.<br>
-                                    그 이외의 필요한 부분들은 스크립트로 제어했습니다.<br>
-                                    웹와치의 심사 기준에 맞춰 수정을 마친 뒤,<br>
-                                    마크를 획득했습니다.
+                            <div class='a11y-explane new-explane' >
+                                <div class="plugin-explane-cnt">
+                                    <div class="title">
+                                        웹 표준 준수 및 <br>
+                                        접근성 마크 획득
+                                    </div>
+                                    <div class="explane">
+                                        마크업을 선형화하고 시맨틱 태그를 사용하여 표준을 준수합니다.<br>
+                                        그 이외의 필요한 부분들은 스크립트로 제어했습니다.<br>
+                                        웹와치의 심사 기준에 맞춰 수정을 마친 뒤,<br>
+                                        마크를 획득했습니다.
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -172,8 +180,10 @@
         margin-top: 1vw;
         font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1vw;
     }
-
-    .plugin, .script, .motion, .a11y { margin-top: 20vw; }
+    .plugin {
+        height: 35vw;
+    }
+    .plugin, .script, .motion, .a11y { margin-top: 20vw; height: 35vw;}
 
     .plugin:after, .motion:after, .script:after, .a11y:after{
         content:'';
@@ -191,7 +201,16 @@
     }
 
     .plugin .plugin-explane, .motion .motion-explane, .script .script-explane, .a11y .a11y-explane  {
+        position: relative;
         float: left;
+        width: 35vw;
+        height: 100%;
+    }
+
+    .new-explane {
+        position: relative;
+        width: 35vw;
+        height: 100%;
     }
 
     .script .script-explane, .a11y .a11y-explane {
@@ -199,7 +218,7 @@
     }
 
     .plugin .plugin-explane .title, .motion .motion-explane .title, .script .script-explane .title, .a11y .a11y-explane .title {
-        margin-top: 7vw;
+        /* margin-top: 7vw; */
         font-family: 'Nanum Gothic', sans-serif;
         font-weight: 800; font-size: 2.5vw; line-height: 1.5;
     }
@@ -207,6 +226,11 @@
         margin-top: 3vw;
         font-family: 'Noto Sans KR', sans-serif;
         font-weight: 300; font-size: 1.3vw; line-height: 2;
+    }
+    .new-explane .plugin-explane-cnt {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .popup-component:after{content:''; display:block; position:absolute; bottom:0px; right:0px; z-index:10; width:100%; height:0%; background:#fff; transition: all 0.8s cubic-bezier(.4,.31,.19,1)}
