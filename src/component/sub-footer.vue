@@ -1,14 +1,14 @@
 <template>
     <div id='footer'>
         <div class="sub-footer">
-            <button class="back" role='button'>
+            <a class="back" role='button' v-bind:href="_url">
             <!-- <button class="back" role='button' v-on:click="reset"> -->
                 <div class="icon">
                     <em style=""></em>
                     <em style=""></em>
                 </div>
                 <div class="txt">Go to Site</div>
-            </button>
+            </a>
         </div>
     </div>
 </template>
@@ -17,6 +17,9 @@
     // import $ from 'jquery'
 
     export default {
+        props: {
+            _url: { type: String, default: '' }
+        },
         methods: {
             // reset : function () {
             //     $('html, body').attr('_back', 'true');
@@ -28,11 +31,12 @@
 <style scoped>
     #footer {float: right; margin-top: 100px}
     .sub-footer {display: flex; align-items: flex-end; justify-content: space-between;}
-    .sub-footer button {font-family: 'OPTIImprovNewWideNine'; font-size: 2.5vw; color: #000; cursor: pointer;}
+    .sub-footer a {font-family: 'OPTIImprovNewWideNine'; font-size: 2.5vw; color: #000; cursor: pointer;}
     .back .icon {
-        position: absolute;
+        position: relative;
     }
     .back em {
+        position: absolute;
         display: block; background-color: #000;
     }
     .back em:first-child {

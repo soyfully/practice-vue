@@ -98,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    <subFooter></subFooter>
+                    <subFooter _url='https://www.lgchem.com/main/index'></subFooter>
                 </div>
             </div>
         </div>
