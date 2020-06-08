@@ -15,20 +15,22 @@
                         ⓒ 2020. KIM SOI All Rights Reserved.
                     </div>
                 </div>
-                <div class="svgBox">
+                <div class="svg-box">
                     <a href="#">
-                        <svg viewBox="0 0 150 150">
-                            <path
-                                id="curve"
-                                fill="transparent"
-                                d="M 75 75 m -50, 0 a 50, 50 0 1, 1 100, 0 a 50, 50 0 1, 1 -100, 0"
-                            />
-                            <text>
-                                <textPath xlink:href="#curve" fill="#eab75b">
-                                    ・STUDY・WITH・ME
-                                </textPath>
-                            </text>
-                        </svg>
+                        <div class="rotate-text">
+                            <svg viewBox="0 0 150 150">
+                                <path
+                                    id="curve"
+                                    fill="transparent"
+                                    d="M 75 75 m -50, 0 a 50, 50 0 1, 1 100, 0 a 50, 50 0 1, 1 -100, 0"
+                                />
+                                <text>
+                                    <textPath xlink:href="#curve" fill="#eab75b">
+                                        ・STUDY・WITH・ME
+                                    </textPath>
+                                </text>
+                            </svg>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -90,6 +92,14 @@
 
                 setTimeout(closeMotion, 1000);
             }, 1000)
+
+            bindEvents();
+        }
+
+        function bindEvents () {
+            $('.svg-box > a').on('click', function () {
+                alert('TO BE CONTINUED!');
+            })
         }
 
         function closeMotion () {
@@ -183,21 +193,21 @@
     }
 
 
-    .svgBox {
+    .svg-box {
         position: absolute;
         width: 10vw;
         height: 10vw;
         right: -10px;
         bottom: 0;
     }
-    .svgBox svg {
+    .svg-box .rotate-text svg {
         display: block;
         width: 11vw;
         height: 11vw;
         letter-spacing: 7px;
         font-size: 18px;
     }
-    .svgBox svg text {
+    .svg-box .rotate-text svg text {
         transform-origin: 50% 50%;
         animation: rotate 8s linear infinite;
 
