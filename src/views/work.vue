@@ -13,7 +13,16 @@
                 </div>
                 <div class='page-content'>
                     <div class='works-list'>
-                        <div class="sub-title">In the company</div>
+                        <div class="sub-title">
+                            <div class="sub-title-name">In the company</div>
+                            <!-- <div class="sub-title-scroll">
+                                <div class="text">scroll</div>
+                                <div class="icon">
+                                    <em style=""></em>
+                                    <em style=""></em>
+                                </div>
+                            </div> -->
+                        </div>
                         <div class="list-wrap swiper-container">
                             <div class="wrap swiper-wrapper">
                                 <div class="list swiper-slide">
@@ -342,6 +351,45 @@
         padding: 0 100px 0 100px;
         font-family: 'OPTIImprovNewWideNine'; font-size: 2.5vw;
         margin-bottom: 3.5vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    #works .works-list .sub-title .sub-title-scroll .icon {
+        position: relative; padding-right: 100px;
+        animation: .55s alternate-reverse infinite cubic-bezier(0.455, 0.03, 0.515, 0.955) yoyo;
+    }
+
+    @-webkit-keyframes yoyo {
+        0%, 5% {
+            -webkit-transform: translateX(0);
+                    transform: translateX(0);
+        }
+        95%,100% {
+            -webkit-transform: translateX(-20px);
+                    transform: translateX(-20px);
+        }
+    }
+
+    @keyframes yoyo {
+        0%, 5% {
+            -webkit-transform: translateX(0);
+                    transform: translateX(0);
+        }
+        95%,100% {
+            -webkit-transform: translateX(-20px);
+                    transform: translateX(-20px);
+        }
+    }
+
+    #works .works-list .sub-title .sub-title-scroll em {
+        position: absolute;
+        display: block; background-color: #fff;
+    }
+    #works .works-list .sub-title .sub-title-scroll em:first-child {
+        position: relative; top: 1.6vw; right: -5.5vw; transform: rotate(-150deg); width: 2.5vw; height: 0.6vw;
+    }
+    #works .works-list .sub-title .sub-title-scroll em:last-child {
+        width: 8vw; height: 0.6vw; margin-top: 1.7vw;
     }
     #works .works-list .list-wrap {
         position: relative;

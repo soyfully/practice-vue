@@ -13,81 +13,106 @@
             </div>
             <div class='page-content'>
                 <div class="accordion">
-                <div class="sub-title">Resume</div>
-                <div class="accordion-item">
-                    <button class="acc-title" type="button">
-                    <div class="title-area">
-                        <div class="tit">
-                            (주)이트라이브<span>스크립터 / 2019.01 ~</span>
+                    <div class="sub-title">Information</div>
+                    <div class="accordion-item">
+                        <button class="acc-title" type="button">
+                        <div class="title-area">
+                            <div class="tit">
+                                안녕하세요. 김소이입니다.<span>열어보세요 !</span>
+                            </div>
+                            <em class="ico01" aria-hidden="true"></em>
+                            <em class="ico02" aria-hidden="true"></em>
                         </div>
-                        <em class="ico01" aria-hidden="true"></em>
-                        <em class="ico02" aria-hidden="true"></em>
+                        </button>
+                        <div class="acc-panel">
+                            <div class="datatable-report">
+                                <div class="img">
+
+                                </div>
+                                <div class="text">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    </button>
-                    <div class="acc-panel">
-                    <div class="datatable-report">
-                            <ul>
-                                <li>webpack, gulp 등 node JS 기반의 개발 경험</li>
-                                <li>Typescript, vanila JS (es6) 를 활용한 회사 공용 플러그인 제작 경험</li>
-                                <li>반응형 프로젝트 진행</li>
-                                <li>디자이너와의 협업을 통한 모션 인터렉션 작업 진행</li>
-                                <li>웹 표준 / 접근성 준수 및 마크 획득</li>
-                                <li>다양한 플러그인 / 라이브러리를 활용한 프로젝트 진행</li>
-                                <li>pug, scss 와 같은 전처리기를 이용한 프로젝트 진행</li>
-                                <li>git을 이용한 코드 형상관리</li>
-                            </ul>
-                            <br>
-                            위와 같이 회사의 전반적인 구축, 운영 스크립트 개발을 담당했습니다.
-                    </div>
-                    </div>
-                </div>
                 </div>
 
                 <div class="accordion">
-                <div class="sub-title">Cover letter</div>
-                <div class="accordion-item">
-                    <button class="acc-title" type="button">
+                    <div class="sub-title">Resume</div>
+                    <div class="accordion-item">
+                        <button class="acc-title" type="button">
                         <div class="title-area">
-                            <div class="tit">호기심이 이끌어,</div>
+                            <div class="tit">
+                                (주)이트라이브<span>스크립터 / 2019.01 ~</span>
+                            </div>
                             <em class="ico01" aria-hidden="true"></em>
                             <em class="ico02" aria-hidden="true"></em>
                         </div>
-                    </button>
-                    <div class="acc-panel">
-                        <div class="datatable-report">
+                        </button>
+                        <div class="acc-panel">
+                            <div class="datatable-report">
+                                <ul>
+                                    <li>webpack, gulp 등 node JS 기반의 개발 경험</li>
+                                    <li>Typescript, vanila JS (es6) 를 활용한 회사 공용 플러그인 제작 경험</li>
+                                    <li>반응형 프로젝트 진행</li>
+                                    <li>디자이너와의 협업을 통한 모션 인터렉션 작업 진행</li>
+                                    <li>웹 표준 / 접근성 준수 및 마크 획득</li>
+                                    <li>다양한 플러그인 / 라이브러리를 활용한 프로젝트 진행</li>
+                                    <li>pug, scss 와 같은 전처리기를 이용한 프로젝트 진행</li>
+                                    <li>git을 이용한 코드 형상관리</li>
+                                </ul>
+                                <br>
+                                위와 같이 회사의 전반적인 구축, 운영 스크립트 개발을 담당했습니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="acc-title" type="button">
-                        <div class="title-area">
-                            <div class="tit">열정으로 나아가다.</div>
-                            <em class="ico01" aria-hidden="true"></em>
-                            <em class="ico02" aria-hidden="true"></em>
-                        </div>
-                    </button>
-                    <div class="acc-panel">
-                        <div class="datatable-report">
+                <div class="accordion">
+                    <div class="sub-title">Cover letter</div>
+                    <div class="accordion-item">
+                        <button class="acc-title" type="button">
+                            <div class="title-area">
+                                <div class="tit">호기심이 이끌어,</div>
+                                <em class="ico01" aria-hidden="true"></em>
+                                <em class="ico02" aria-hidden="true"></em>
+                            </div>
+                        </button>
+                        <div class="acc-panel">
+                            <div class="datatable-report">
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="acc-title" type="button">
-                        <div class="title-area">
-                            <div class="tit">그리고 그 사이에 선 나.</div>
-                            <em class="ico01" aria-hidden="true"></em>
-                            <em class="ico02" aria-hidden="true"></em>
-                        </div>
-                    </button>
-                    <div class="acc-panel">
-                        <div class="datatable-report">
-                            관심이 생기면 무엇이든 공부해왔습니다. 필요하다면 어떻게 해서든 습득했습니다. <br>
-                            빠르게 변화하는 프론트엔드 개발의 기술 속에서 뒤쳐지고 싶지 않다는 욕심이 가장 큽니다. <br>
+                    <div class="accordion-item">
+                        <button class="acc-title" type="button">
+                            <div class="title-area">
+                                <div class="tit">열정으로 나아가다.</div>
+                                <em class="ico01" aria-hidden="true"></em>
+                                <em class="ico02" aria-hidden="true"></em>
+                            </div>
+                        </button>
+                        <div class="acc-panel">
+                            <div class="datatable-report">
+
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="accordion-item">
+                        <button class="acc-title" type="button">
+                            <div class="title-area">
+                                <div class="tit">그리고 그 사이에 선 나.</div>
+                                <em class="ico01" aria-hidden="true"></em>
+                                <em class="ico02" aria-hidden="true"></em>
+                            </div>
+                        </button>
+                        <div class="acc-panel">
+                            <div class="datatable-report">
+                                관심이 생기면 무엇이든 공부해왔습니다. 필요하다면 어떻게 해서든 습득했습니다. <br>
+                                빠르게 변화하는 프론트엔드 개발의 기술 속에서 뒤쳐지고 싶지 않다는 욕심이 가장 큽니다. <br>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

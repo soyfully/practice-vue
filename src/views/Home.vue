@@ -24,12 +24,16 @@
                                     fill="transparent"
                                     d="M 75 75 m -50, 0 a 50, 50 0 1, 1 100, 0 a 50, 50 0 1, 1 -100, 0"
                                 />
-                                <text>
+                                <text class='turn'>
                                     <textPath xlink:href="#curve" fill="#eab75b">
                                         ・STUDY・WITH・ME
                                     </textPath>
                                 </text>
+                                <text class="go" fill="#eab75b" text-anchor="middle" alignment-baseline="middle" transform="translate(75, 75)">
+                                    GO
+                                </text>
                             </svg>
+
                         </div>
                     </a>
                 </div>
@@ -208,14 +212,22 @@
         font-size: 18px;
     }
     .svg-box .rotate-text svg text {
+        text-shadow:
+            -2px -2px 0 #fff,
+            2px -2px 0 #fff,
+            -2px 2px 0 #fff,
+            2px 2px 0 #fff;
+    }
+    .svg-box .rotate-text svg text.turn {
         transform-origin: 50% 50%;
         animation: rotate 8s linear infinite;
-
-        text-shadow:
-        -2px -2px 0 #fff,
-        2px -2px 0 #fff,
-        -2px 2px 0 #fff,
-        2px 2px 0 #fff;
+    }
+    .svg-box .rotate-text svg text.go {
+        opacity: 0;
+        transition: 0.4s ease all;
+    }
+    .svg-box a:hover .rotate-text svg text.go{
+        opacity: 1;
     }
 
     @keyframes rotate {
