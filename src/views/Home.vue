@@ -15,6 +15,22 @@
                         ⓒ 2020. KIM SOI All Rights Reserved.
                     </div>
                 </div>
+                <div class="svgBox">
+                    <a href="#">
+                        <svg viewBox="0 0 150 150">
+                            <path
+                                id="curve"
+                                fill="transparent"
+                                d="M 75 75 m -50, 0 a 50, 50 0 1, 1 100, 0 a 50, 50 0 1, 1 -100, 0"
+                            />
+                            <text>
+                                <textPath xlink:href="#curve" fill="#eab75b">
+                                    ・STUDY・WITH・ME
+                                </textPath>
+                            </text>
+                        </svg>
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -166,5 +182,39 @@
         width: 0%;
     }
 
+
+    .svgBox {
+        position: absolute;
+        width: 10vw;
+        height: 10vw;
+        right: -10px;
+        bottom: 0;
+    }
+    .svgBox svg {
+        display: block;
+        width: 11vw;
+        height: 11vw;
+        letter-spacing: 7px;
+        font-size: 18px;
+    }
+    .svgBox svg text {
+        transform-origin: 50% 50%;
+        animation: rotate 8s linear infinite;
+
+        text-shadow:
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
 </style>
 

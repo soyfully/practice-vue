@@ -1,7 +1,7 @@
 <template>
     <div id='footer'>
         <div class="sub-footer">
-            <a class="back" role='button' v-bind:href="_url">
+            <a class="back" role='button' v-bind:href="_url" target="_blank">
             <!-- <button class="back" role='button' v-on:click="reset"> -->
                 <div class="icon">
                     <em style=""></em>
