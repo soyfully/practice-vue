@@ -15,13 +15,13 @@
                     <div class='works-list'>
                         <div class="sub-title">
                             <div class="sub-title-name">In the company</div>
-                            <!-- <div class="sub-title-scroll">
+                            <div class="sub-title-scroll">
                                 <div class="text">scroll</div>
                                 <div class="icon">
                                     <em style=""></em>
                                     <em style=""></em>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                         <div class="list-wrap swiper-container">
                             <div class="wrap swiper-wrapper">
@@ -354,9 +354,16 @@
         display: flex;
         justify-content: space-between;
     }
+    #works .works-list .sub-title .sub-title-scroll::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    #works .works-list .sub-title .sub-title-scroll {animation: .55s alternate-reverse infinite cubic-bezier(0.455, 0.03, 0.515, 0.955) yoyo;}
+    #works .works-list .sub-title .sub-title-scroll .text {float: left; margin-right: 2vw;}
     #works .works-list .sub-title .sub-title-scroll .icon {
+        float: left;
         position: relative; padding-right: 100px;
-        animation: .55s alternate-reverse infinite cubic-bezier(0.455, 0.03, 0.515, 0.955) yoyo;
     }
 
     @-webkit-keyframes yoyo {
@@ -386,10 +393,10 @@
         display: block; background-color: #fff;
     }
     #works .works-list .sub-title .sub-title-scroll em:first-child {
-        position: relative; top: 1.6vw; right: -5.5vw; transform: rotate(-150deg); width: 2.5vw; height: 0.6vw;
+        position: absolute; top: 1vw; right: 0; transform: rotate(-150deg); width: 2.5vw; height: 0.6vw;
     }
     #works .works-list .sub-title .sub-title-scroll em:last-child {
-        width: 8vw; height: 0.6vw; margin-top: 1.7vw;
+        width: 8vw; height: 0.6vw; margin-top: 1.7vw; right: 0;
     }
     #works .works-list .list-wrap {
         position: relative;
