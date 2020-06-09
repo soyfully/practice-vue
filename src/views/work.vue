@@ -16,7 +16,7 @@
                         <div class="sub-title">
                             <div class="sub-title-name">In the company</div>
                             <div class="sub-title-scroll">
-                                <div class="text">scroll</div>
+                                <!-- <div class="text">scroll</div> -->
                                 <div class="icon">
                                     <em style=""></em>
                                     <em style=""></em>
@@ -360,7 +360,7 @@
         display: block;
     }
     #works .works-list .sub-title .sub-title-scroll {animation: .55s alternate-reverse infinite cubic-bezier(0.455, 0.03, 0.515, 0.955) yoyo;}
-    #works .works-list .sub-title .sub-title-scroll .text {float: left; margin-right: 2vw;}
+    #works .works-list .sub-title .sub-title-scroll .text {float: left;}
     #works .works-list .sub-title .sub-title-scroll .icon {
         float: left;
         position: relative; padding-right: 100px;
@@ -372,8 +372,8 @@
                     transform: translateX(0);
         }
         95%,100% {
-            -webkit-transform: translateX(-20px);
-                    transform: translateX(-20px);
+            -webkit-transform: translateX(-10px);
+                    transform: translateX(-10px);
         }
     }
 
@@ -383,8 +383,8 @@
                     transform: translateX(0);
         }
         95%,100% {
-            -webkit-transform: translateX(-20px);
-                    transform: translateX(-20px);
+            -webkit-transform: translateX(-10px);
+                    transform: translateX(-10px);
         }
     }
 
