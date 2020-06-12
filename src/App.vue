@@ -17,6 +17,7 @@
 
 <template>
     <div id="app">
+        <vue-progress-bar></vue-progress-bar>
         <MenuComponent></MenuComponent>
         <router-view/>
         <popupComp></popupComp>
@@ -31,11 +32,34 @@
     export default {
         components: { MenuComponent , popupComp},
 
-        // data () {
-        //   return {
-        //     title: 'app.vue',
-        //   }
-        // },
+        created () {
+            // App.vue가 처음로드되면 진행률 표시 줄을 시작합니다
+            this.$Progress.start();
+
+            // router-view를 이동하기 전에 진행률 표시 줄을 시작합니다.
+            this.$router.beforeEach((to, from, next) => {
+                //  Meta.progress 객체를 가지려고하는 페이지를 수행합니까?
+                if (to.meta.progress !== undefined) {
+                    let meta = to.meta.progress
+                    // 메타 태그 구문 분석
+                    this.$Progress.parseMeta(meta)
+                }
+                // 진행률 표시 줄을 시작합니다
+                this.$Progress.start()
+                // 다음 페이지로 계속
+                next();
+            })
+
+            // router-view 이동을 완료 한 후 진행률 표시 줄을 연결하여 완료
+            this.$router.afterEach(() => {
+                // 진행률 표시 줄을 마무리합니다
+                this.$Progress.finish()
+            })
+        },
+        mounted () {
+            // App.vue의로드가 완료되면 진행률 표시 줄이 완료됩니다.
+            this.$Progress.finish();
+        },
     }
 
 
@@ -44,7 +68,7 @@
         alert('본 사이트는 크롬 및 기타 브라우저(파이어폭스, 사파리, 엣지)에 최적화 되어있습니다!')
         // ie일 경우
     }else{
-        console.log('other')
+        // console.log('other')
         // ie가 아닐 경우
     }
 </script>
