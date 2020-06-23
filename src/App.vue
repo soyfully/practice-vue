@@ -74,6 +74,9 @@
 </script>
 
 <style>
+    body::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
     .dimm {
         position: absolute; top: 0; z-index: 5; display: none;
         width: 100%; height: 100%; background: #000; opacity: 0.8;

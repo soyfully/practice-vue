@@ -239,7 +239,7 @@
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
     }
-    #profile .container .wrap::-webkit-scrollbar {
+    #profile .container::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera*/
     }
     #profile .container .page-explain{}
