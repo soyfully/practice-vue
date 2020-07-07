@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <download></download>
+            <subFooter _url='https://www.lgchem.com/main/index' _message='Download'></subFooter>
         </div>
     </div>
   </div>
@@ -125,32 +125,23 @@
 
 <script>
     import $ from 'jquery'
-    // import { TweenMax , Expo } from 'gsap';
     import ScrollMagic from 'scrollmagic';
 
-    import download from '../component/download-comp.vue'
+    import subFooter from '../component/sub-footer.vue'
 
 
     export default {
-        components: { download },
+        components: { subFooter },
 
         methods: {
 
         },
-        // beforeRouteEnter (to, from ,next) {
-        //     // 현재 컴포넌트 불러오기 전 menu close motion
-        //     // menu 모션이 끝났을 때
-        //     if ($('.menu-component').attr('_move') == 'false' || $('.menu-component').attr('_move') == undefined) {
-        //         next();
-        //     } else { // menu 모션이 끝나기 전
-        //         return false;
-        //     }
-        // },
+        created () {
+            $('html, body').css('background-color','rgb(107, 185, 127)')
+            .attr('_init', 'true')
+            .addClass('profile');
+        },
         mounted () {
-            $('html, body').css('background-color','rgb(107, 185, 127)');
-
-            $('html, body').attr('_init', 'true');
-
             profileEvent().init();
         },
     }
@@ -228,7 +219,7 @@
     #profile .container {
         position: absolute; top: 0;
         width: calc(100% - 200px); height: 100%;
-        margin: 0 100px 0 100px;
+        margin: 0 100px 100px 100px;
         overflow-x: scroll;
     }
     #profile .container .wrap {

@@ -10,7 +10,6 @@
             </div>
         </div>
         <div class="content-wrap">
-            <!-- <div class='bg'></div> -->
             <div class='content'>
                 <div class="content-icon">
                     <div class="icon">
@@ -37,18 +36,6 @@
                             +82 10-3799-1219
                         </div>
                     </div>
-                    <!-- <div class="sns">
-                        <div class='git'>
-                            <a href="https://github.com/soyfully" target="_blank">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <div class='insta'>
-                            <a href="https://www.instagram.com/?hl=ko" target="_blank">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -57,7 +44,6 @@
 
 <script>
     import $ from 'jquery'
-    // import { TweenMax, Expo } from 'gsap';
 
     export default {
         mounted () {
@@ -91,32 +77,14 @@
             })
 
             openIcon.on('click', function () {
-                // if (menuComp.attr('_move') == 'false') {
-                //    open();
-                // } else {
-                //     return false;
-                // }
-
                 open();
             });
 
             closeIcon.on('click', function () {
-                // if (menuComp.attr('_move') == 'false') {
-                //    close();
-                // } else {
-                //     return false;
-                // }
-
                 close();
             })
 
             $('.menu-list > a').on('click', function () {
-                // if (menuComp.attr('_move') == 'false') {
-                //    close();
-                // } else {
-                //     return false;
-                // }
-
                 close();
             })
         }
@@ -131,8 +99,6 @@
             setTimeout(function () {
                 menuContent.removeClass('close').addClass('open').css('display', 'block');
             }, 600)
-
-            // menuComp.attr('_move', 'true');
         }
 
         function close () {
@@ -151,8 +117,6 @@
                     menuContent.css('display','none');
                 }
             });
-
-            // menuComp.attr('_move', 'true');
         }
 
         return {

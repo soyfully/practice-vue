@@ -98,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    <subFooter _url='https://www.lgchem.com/main/index'></subFooter>
+                    <subFooter _url='https://www.lgchem.com/main/index' _message='Go to site'></subFooter>
                 </div>
             </div>
         </div>
@@ -156,6 +156,9 @@
         color: #000;
 
         overflow-y: scroll;
+    }
+    .page-content{
+        margin-bottom: 100px
     }
 
     .content-start {

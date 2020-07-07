@@ -71,18 +71,6 @@
                 </div>
             </div>
         </div>
-
-        <!--
-        <div class='layerPopup' style="
-            display:none;
-            padding: 50px;
-            width: 500px;
-            height: 700px;
-            background-color: #fff;">
-            <div class='destroyPopup' style="margin-top:20px; color: #000; cursor:pointer; text-decoration-line: underline;">modal.hide();</div>
-        </div>
-        -->
-
     </div>
 </template>
 
@@ -94,20 +82,9 @@
     // import EtribeModal from '../../public/etribeModal.min.js';
 
     export default {
-        // components: { subFooter },
-
         methods: {
 
         },
-        // beforeRouteEnter (to, from ,next) {
-        //     // 현재 컴포넌트 불러오기 전 menu close motion
-        //     // menu 모션이 끝났을 때
-        //     if ($('.menu-component').attr('_move') == 'false' || $('.menu-component').attr('_move') == undefined) {
-        //         next();
-        //     } else { // menu 모션이 끝나기 전
-        //         return false;
-        //     }
-        // },
         mounted () {
             $('html, body').attr('_init', 'true');
 
@@ -116,9 +93,7 @@
     }
 
     var worksEvent = function () {
-        // var $scrollLeftFunc
         var $list, $setWidth;
-        // var controller, scene;
 
         function init () {
             $setWidth = $('.container').width() - 100;
@@ -139,10 +114,6 @@
                 freeModeSticky: true,
                 slidesPerView: 'auto'
             })
-
-            // active horizental scroll funtion
-            // $scrollLeftFunc = new ScrollLeftFunction();
-            // $scrollLeftFunc.active($(window), $list);
 
             // import modal function
             // importModalFunc().init();
@@ -214,55 +185,6 @@
             init : init
         }
     }
-
-    // var ScrollLeftFunction = function () {
-    //     var $el, $moveLeft, $rangeEl;
-    //     // var $upDown;
-
-    //     (function init () {
-    //         $moveLeft = 0;
-    //     })();
-
-    //     this.active = function (_rangeEl, _el) {
-    //         $rangeEl = $(_rangeEl);
-    //         $el = $(_el);
-
-    //         $rangeEl.on("mousewheel DOMMouseScroll", function(event){
-    //             var _wheelDelta = event.originalEvent.wheelDelta;
-
-    //             if (!event) event = window.event;
-    //             // if(event.originalEvent.wheelDelta > 0) {
-    //             //     $upDown = "up";
-    //             // } else {
-    //             //     $upDown = "down";
-    //             // }
-
-    //             render(_wheelDelta);
-    //         })
-    //     }
-
-    //     this.destory = function (_rangeEl) {
-    //         $rangeEl = $(_rangeEl);
-
-    //         $rangeEl.off("mousewheel DOMMouseScroll");
-    //     }
-
-    //     function render(_wheelDelta){
-    //         $moveLeft -= _wheelDelta;
-    //         if($moveLeft < 0) $moveLeft = 0;
-
-    //         moveLeftFunc();
-    //     }
-
-    //     function moveLeftFunc () {
-    //         TweenMax.to($el, 0.5, {
-    //             scrollLeft: $moveLeft,
-    //             onUpdate:function(){
-
-    //             },
-    //         });
-    //     }
-    // }
 
     // var importModalFunc = function () {
     //     var $el, $initBtn, $destroyBtn;

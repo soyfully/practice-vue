@@ -2,34 +2,38 @@
     <div id='footer'>
         <div class="sub-footer">
             <a class="back" role='button' v-bind:href="_url" target="_blank">
-            <!-- <button class="back" role='button' v-on:click="reset"> -->
                 <div class="icon">
                     <em style=""></em>
                     <em style=""></em>
                 </div>
-                <div class="txt">Go to Site</div>
+                <div class="txt">{{ _message }}</div>
             </a>
         </div>
     </div>
 </template>
 
 <script>
-    // import $ from 'jquery'
+    import $ from 'jquery'
 
     export default {
         props: {
-            _url: { type: String, default: '' }
+            _url: { type: String, default: '' },
+            _message : { type: String, default: '' }
+
         },
         methods: {
-            // reset : function () {
-            //     $('html, body').attr('_back', 'true');
-            // }
+
+        },
+        mounted () {
+            if ($('html, body').hasClass('profile')) {
+                $('#footer').addClass('profile-ver');
+            }
         },
     }
 </script>
 
 <style scoped>
-    #footer {float: right; margin-top: 100px}
+    #footer {float: right;}
     .sub-footer {display: flex; align-items: flex-end; justify-content: space-between;}
     .sub-footer a {font-family: 'OPTIImprovNewWideNine'; font-size: 2.5vw; color: #000; cursor: pointer;}
     .back .icon {
@@ -48,4 +52,8 @@
     .back .txt {
         margin-left: 10vw; color: #000;
     }
+
+    #footer.profile-ver {margin-bottom: 100px}
+    #footer.profile-ver .back em {background-color: #fff;}
+    #footer.profile-ver .back .txt {color: #fff;}
 </style>
