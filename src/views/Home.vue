@@ -15,27 +15,9 @@
                         ⓒ 2020. KIM SOI All Rights Reserved.
                     </div>
                 </div>
-                <div class="svg-box">
-                    <a href="#">
-                        <div class="rotate-text">
-                            <svg viewBox="0 0 150 150">
-                                <path
-                                    id="curve"
-                                    fill="transparent"
-                                    d="M 75 75 m -50, 0 a 50, 50 0 1, 1 100, 0 a 50, 50 0 1, 1 -100, 0"
-                                />
-                                <text class='turn'>
-                                    <textPath xlink:href="#curve" fill="#eab75b">
-                                        ・STUDY・WITH・ME
-                                    </textPath>
-                                </text>
-                                <text class="go" fill="#eab75b" text-anchor="middle" alignment-baseline="middle" transform="translate(75, 75)">
-                                    GO
-                                </text>
-                            </svg>
-
-                        </div>
-                    </a>
+                <div class="study-icon">
+                    <div class="go">GO</div>
+                    <img class="turn" :src="image" />
                 </div>
             </div>
 
@@ -46,21 +28,19 @@
 
 <script>
     import $ from 'jquery'
+    import image from "../assets/img/soynim.png"
+
     // import { TweenMax } from 'gsap';
 
     export default {
+        data: function () {
+            return {
+                image: image
+            }
+        },
         methods: {
 
         },
-        // beforeRouteEnter (to, from ,next) {
-        //     // 현재 컴포넌트 불러오기 전 menu close motion
-        //     // menu 모션이 끝났을 때
-        //     if ($('.menu-component').attr('_move') == 'false' || $('.menu-component').attr('_move') == undefined) {
-        //         next();
-        //     } else { // menu 모션이 끝나기 전
-        //         return false;
-        //     }
-        // },
         mounted () {
             $('html, body').css('background-color','#eab75b');
 
@@ -101,7 +81,7 @@
         }
 
         function bindEvents () {
-            $('.svg-box > a').on('click', function () {
+            $('.study-icon').on('click', function () {
                 alert('TO BE CONTINUED!');
             })
         }
@@ -196,40 +176,42 @@
         width: 0%;
     }
 
-
-    .svg-box {
+    .study-icon {
         position: absolute;
-        width: 10vw;
-        height: 10vw;
-        right: -10px;
-        bottom: 0;
+        width: 15vw;
+        height: 15vw;
+        right: -50px;
+        bottom: -30px;
+        cursor: pointer;
     }
-    .svg-box .rotate-text svg {
-        display: block;
-        width: 11vw;
-        height: 11vw;
-        letter-spacing: 7px;
-        font-size: 18px;
+    .study-icon img {
+        width: 100%;
     }
-    .svg-box .rotate-text svg text {
+    .study-icon .go {
+        position: absolute;
+        top: 50%; left: 50%; transform: translate(-50%, -50%);
+        font-size: 1.6vw;
+        letter-spacing: 5px;
+        color: #eab75b;
         text-shadow:
-            -2px -2px 0 #fff,
-            2px -2px 0 #fff,
-            -2px 2px 0 #fff,
-            2px 2px 0 #fff;
+            -1px -1px 0 #fff,
+            1px -1px 0 #fff,
+            -1px 1px 0 #fff,
+            1px 1px 0 #fff;
     }
-    .svg-box .rotate-text svg text.turn {
-        transform-origin: 50% 50%;
-        animation: rotate 8s linear infinite;
-    }
-    .svg-box .rotate-text svg text.go {
+
+    .study-icon .go {
         opacity: 0;
         transition: 0.4s ease all;
     }
-    .svg-box a:hover .rotate-text svg text.go{
+    .study-icon:hover .go{
         opacity: 1;
     }
 
+    .study-icon img.turn {
+        transform-origin: 50% 50%;
+        animation: rotate 8s linear infinite;
+    }
     @keyframes rotate {
         from {
             transform: rotate(0);
