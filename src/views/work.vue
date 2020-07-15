@@ -27,28 +27,29 @@
                             <div class="wrap swiper-wrapper">
                                 <div class="list swiper-slide">
                                     <div class="list-title">
-                                        엘지 화학 사이트 리뉴얼<span>메인 프로젝트</span>
+                                        대림 이편한 세상 사이트 리뉴얼
+                                        <span>메인 프로젝트</span>
                                     </div>
                                     <div class="list-content">
                                         <div>JS / JQuery</div>
                                         <div>Gulp</div>
-                                        <div class='kr'>반응형</div>
                                         <div>a11y</div>
                                     </div>
                                 </div>
-                                <div class="list swiper-slide">
+                                <a class="list swiper-slide" href="https://github.com/soyfully/make-component" target="_blank">
                                     <div class="list-title">
-                                        대림 이편한 세상 사이트 리뉴얼<span>메인 프로젝트</span>
+                                        Common UI 플러그인
+                                        <span>서브 프로젝트</span>
                                     </div>
                                     <div class="list-content">
-                                        <div>JS / JQuery</div>
-                                        <div>Gulp</div>
-                                        <div>a11y</div>
+                                        <div>Vanilla JS</div>
+                                        <div>Webpack</div>
                                     </div>
-                                </div>
+                                </a>
                                 <a class="list swiper-slide" href="https://github.com/soyfully/loading-library" target="_blank">
                                     <div class="list-title">
-                                        로딩 아이콘 노출 플러그인<span>서브 프로젝트</span>
+                                        로딩 아이콘 플러그인
+                                        <span>서브 프로젝트</span>
                                     </div>
                                     <div class="list-content">
                                         <div>es6</div>
@@ -58,7 +59,8 @@
                                 </a>
                                 <a class="list swiper-slide" href="https://github.com/soyfully/modal-library" target="_blank">
                                     <div class="list-title">
-                                        모달 팝업 플러그인<span>서브 프로젝트</span>
+                                        레이어 팝업 제어 플러그인
+                                        <span>서브 프로젝트</span>
                                     </div>
                                     <div class="list-content">
                                         <div>es6</div>

@@ -20,18 +20,18 @@
         <vue-progress-bar></vue-progress-bar>
         <MenuComponent></MenuComponent>
         <router-view/>
-        <lgComp></lgComp>
+        <!-- <lgComp></lgComp> -->
         <elifeComp></elifeComp>
     </div>
 </template>
 
 <script>
     import MenuComponent from './component/menu-component.vue';
-    import lgComp from './component/lg-comp.vue';
+    // import lgComp from './component/lg-comp.vue';
     import elifeComp from './component/elife-comp.vue';
 
     export default {
-        components: { MenuComponent , lgComp, elifeComp},
+        components: { MenuComponent , elifeComp},
 
         created () {
             // App.vue가 처음로드되면 진행률 표시 줄을 시작합니다
