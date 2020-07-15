@@ -46,16 +46,7 @@
                                         <div>a11y</div>
                                     </div>
                                 </div>
-                                <div class="list swiper-slide">
-                                    <div class="list-title">
-                                        파리바 접근성 마크 획득<span>메인 프로젝트</span>
-                                    </div>
-                                    <div class="list-content">
-                                        <div>JS / JQuery</div>
-                                        <div>a11y</div>
-                                    </div>
-                                </div>
-                                <div class="list swiper-slide">
+                                <a class="list swiper-slide" href="https://github.com/soyfully/loading-library" target="_blank">
                                     <div class="list-title">
                                         로딩 아이콘 노출 플러그인<span>서브 프로젝트</span>
                                     </div>
@@ -64,7 +55,17 @@
                                         <div>Typescript</div>
                                         <div>Webpack</div>
                                     </div>
-                                </div>
+                                </a>
+                                <a class="list swiper-slide" href="https://github.com/soyfully/modal-library" target="_blank">
+                                    <div class="list-title">
+                                        모달 팝업 플러그인<span>서브 프로젝트</span>
+                                    </div>
+                                    <div class="list-content">
+                                        <div>es6</div>
+                                        <div>Typescript</div>
+                                        <div>Webpack</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -137,14 +138,18 @@
             //     $('.list-wrap .list').removeClass('on');
             // })
 
+            var thisIndex;
+
             $('.list-wrap .list').on('click', function () {
-                var thisIndex = $(this).index();
+                thisIndex = $(this).index();
 
                 open(thisIndex);
+
+                return thisIndex;
             })
 
             $('.popup-close-icon').on('click', function () {
-                close();
+                close(thisIndex);
             })
         }
 
@@ -163,20 +168,20 @@
             }, 600)
         }
 
-        function close () {
+        function close (i) {
             $('html, body').css('overflow','visible').attr('_state','close');
 
-            $('.popup-content').removeClass('open').addClass('close');
+            $('.popup-content').eq(i).removeClass('open').addClass('close');
             setTimeout(function () {
                 $('.sub, .main').removeClass('move').addClass('reverse');
             }, 200)
             setTimeout(function () {
-                $('.popup-component').removeClass('open');
+                $('.popup-component').eq(i).removeClass('open');
             }, 600)
 
             $('.popup-content').on("animationend", function(){
                 if ($('html, body').attr('_state') == 'close') {
-                    $('.popup-content').css('display','none');
+                    $('.popup-content').eq(i).css('display','none');
                 }
             });
         }
