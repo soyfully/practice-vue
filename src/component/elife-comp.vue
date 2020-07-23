@@ -16,8 +16,7 @@
                             대림 이편한세상 브랜드 웹사이트 리뉴얼
                         </div>
                         <div class='explane'>
-                            모든 페이지의 스크립트 작성, 그리고 모션에 관련된 마크업을 진행했습니다. 개발과의 협업이 중요한 프로젝트였기에 코드를 재사용할 수 있도록 신경 써 작성했습니다.<br>
-                            필요에 따라 플러그인을 활용했습니다. 또, 기본적인 웹 접근성을 준수했습니다.<br>
+                            모든 페이지의 스크립트 작성, 그리고 모션에 관련된 마크업을 진행했습니다. 개발과의 협업이 중요한 프로젝트였기에 코드를 재사용할 수 있도록 신경 써 작성했습니다. 필요에 따라 플러그인을 활용했습니다. 또, 기본적인 웹 접근성을 준수했습니다.<br>
                             <p>
                                 기여도 100% (스크립트) / 15% (퍼블리싱)
                             </p>
@@ -35,8 +34,7 @@
                                     </div>
                                     <div class="explane">
                                         개발이 붙는 과정에서 스크립트 함수 재사용이 빈번하다는 것을 경험하고,
-                                        언제든 활용할 수 있도록 모듈화하여 <br>
-                                        필요시 전역으로 선언된 개발자 전용 함수에 실행하여 사용합니다.<br>
+                                        언제든 활용할 수 있도록 모듈화하여 필요시 전역으로 선언된 개발자 전용 함수에 실행하여 사용합니다.
                                         또, 변수와 함수의 중복 선언을 막기 위해 코드를 은닉화하여 유지 보수가 수월합니다.
                                     </div>
                                 </div>
@@ -71,12 +69,11 @@
                                     </div>
                                     <div class="explane">
                                         리퀘스트, 리소스가 많으면 초기 화면 로딩이 느릴 수 있다는 것을 경험했습니다.
-                                        리퀘스트 수를 줄이기 위해 이미지는 최초에 <br>
-                                        더미 이미지를 활용, 추후 해당 영역 도달 시 이미지를 <br>
-                                        교체하는 등 lazy load 를 사용하여 리퀘스트를 최소한으로 <br>
-                                        줄였습니다. 또, 플러그인을 하나의 파일로 한데 모아 <br>
-                                        js 호출 리퀘스트를 줄였으며, 스와이퍼와 같은 플러그인도 <br>
-                                        해당 영역 도달 시 실행하여 속도 이슈의 문제를 해결해나갔습니다.
+                                        리퀘스트 수를 줄이기 위해 이미지는 최초에 더미 이미지를 활용,
+                                        추후 해당 영역 도달 시 이미지를 교체하는 등 lazy-load 를 사용하여
+                                        리퀘스트를 최소한으로 줄였습니다.
+                                        또, 플러그인을 하나의 파일로 한데 모아 js 호출 리퀘스트를 줄였으며,
+                                        스와이퍼와 같은 플러그인도 해당 영역 도달 시 실행하여 속도 이슈의 문제를 해결해나갔습니다.
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +176,7 @@
     }
     .page-explain .explane {
         margin-top: 3.5vw;
-        font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1.3vw; line-height: 2;
+        font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1.3vw; line-height: 2; word-break:keep-all;
     }
     .page-explain .explane p {
         margin-top: 1vw;
@@ -206,7 +203,7 @@
     .content-section .explane {
         margin-top: 3vw;
         font-family: 'Noto Sans KR', sans-serif;
-        font-weight: 300; font-size: 1.3vw; line-height: 2;
+        font-weight: 300; font-size: 1.3vw; line-height: 2; word-break:keep-all
     }
     .content-section .txt-container .txt-wrap {
         position: absolute;
