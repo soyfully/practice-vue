@@ -16,56 +16,38 @@
                             대림 이편한세상 브랜드 웹사이트 리뉴얼
                         </div>
                         <div class='explane'>
-                            모든 페이지의 스크립트 작성, 그리고 모션에 관련된 퍼블리싱 마크업을 진행했습니다. 반응형 프로젝트였기에 코드를 재사용할 수 있도록 신경 써 작성했습니다.<br>
-                            기본적으로 웹 표준을 준수했으며 접근성 획득을 위한 세부 작업을 진행해 마크 획득을 마쳤습니다.<br>
+                            모든 페이지의 스크립트 작성, 그리고 모션에 관련된 마크업을 진행했습니다. 개발과의 협업이 중요한 프로젝트였기에 코드를 재사용할 수 있도록 신경 써 작성했습니다.<br>
+                            필요에 따라 플러그인을 활용했습니다. 또, 기본적인 웹 접근성을 준수했습니다.<br>
                             <p>
                                 기여도 100% (스크립트) / 15% (퍼블리싱)
                             </p>
                         </div>
                     </div>
                     <div class="page-content">
-                        <div class='plugin'>
+                        <div class='content-section left-position'>
                             <div class='img'>
                                 <img src="" alt="">
                             </div>
-                            <div class='plugin-explane new-explane'>
-                                <div class="plugin-explane-cnt">
+                            <div class='txt-container'>
+                                <div class="txt-wrap">
                                     <div class="title">
-                                        다양한 플러그인
+                                        개발 협업을 위한 코드 작성
                                     </div>
                                     <div class="explane">
-                                        스와이퍼, 스크롤 매직 등 다양한 라이브러리 / 플러그인을 활용해<br>
-                                        크로스 브라우징 또는 반응형 작업 시 생기는 오류를 잡았습니다. <br>
-                                        API 를 참고해 사용 방법을 숙지하고, 프로젝트에 맞게<br>
-                                        확장하여 수월히 작업하였습니다.
+                                        개발이 붙는 과정에서 스크립트 함수 재사용이 빈번하다는 것을 경험하고,
+                                        언제든 활용할 수 있도록 모듈화하여 <br>
+                                        필요시 전역으로 선언된 개발자 전용 함수에 실행하여 사용합니다.<br>
+                                        또, 변수와 함수의 중복 선언을 막기 위해 코드를 은닉화하여 유지 보수가 수월합니다.
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class='script'>
+                        <div class='content-section right-position'>
                             <div class='img'>
                                 <img src="" alt="">
                             </div>
-                            <div class='script-explane new-explane'>
-                                <div class="plugin-explane-cnt">
-                                    <div class="title">
-                                        코드 모듈화 및 은닉
-                                    </div>
-                                    <div class="explane">
-                                        코드 재사용을 위해 모듈화하여 data 에 저장 후<br>
-                                        윈도우 리사이즈를 실행하거나 개발 시 쉽게 불러올 수 있도록<br>
-                                        작성하였습니다. 또, 변수와 함수의 중복 선언을<br>
-                                        막기 위해 코드를 은닉화하여 유지 보수가 수월합니다.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class='motion'>
-                            <div class='img'>
-                                <img src="" alt="">
-                            </div>
-                            <div class='motion-explane new-explane'>
-                                <div class="plugin-explane-cnt">
+                            <div class='txt-container'>
+                                <div class="txt-wrap">
                                     <div class="title">
                                         모션 인터렉션
                                     </div>
@@ -78,21 +60,41 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='a11y'>
+                        <div class='content-section left-position'>
                             <div class='img'>
                                 <img src="" alt="">
                             </div>
-                            <div class='a11y-explane new-explane' >
-                                <div class="plugin-explane-cnt">
+                            <div class='txt-container'>
+                                <div class="txt-wrap">
                                     <div class="title">
-                                        웹 표준 준수 및 <br>
-                                        접근성 마크 획득
+                                        성능을 위한 다양한 시도
                                     </div>
                                     <div class="explane">
-                                        마크업을 선형화하고 시맨틱 태그를 사용하여 표준을 준수합니다.<br>
-                                        그 이외의 필요한 부분들은 스크립트로 제어했습니다.<br>
-                                        웹와치의 심사 기준에 맞춰 수정을 마친 뒤,<br>
-                                        마크를 획득했습니다.
+                                        리퀘스트, 리소스가 많으면 초기 화면 로딩이 느릴 수 있다는 것을 경험했습니다.
+                                        리퀘스트 수를 줄이기 위해 이미지는 최초에 <br>
+                                        더미 이미지를 활용, 추후 해당 영역 도달 시 이미지를 <br>
+                                        교체하는 등 lazy load 를 사용하여 리퀘스트를 최소한으로 <br>
+                                        줄였습니다. 또, 플러그인을 하나의 파일로 한데 모아 <br>
+                                        js 호출 리퀘스트를 줄였으며, 스와이퍼와 같은 플러그인도 <br>
+                                        해당 영역 도달 시 실행하여 속도 이슈의 문제를 해결해나갔습니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='content-section right-position'>
+                            <div class='img'>
+                                <img src="" alt="">
+                            </div>
+                            <div class='txt-container'>
+                                <div class="txt-wrap">
+                                    <div class="title">
+                                        다양한 플러그인
+                                    </div>
+                                    <div class="explane">
+                                        Lotti Bodymovin,  scrollMagic 등 다양한 플러그인을 활용해<br>
+                                        크로스 브라우징 또는 반응형 작업 시 생기는 오류를 잡았습니다. <br>
+                                        API 를 참고해 사용 방법을 숙지하고, 프로젝트에 맞게<br>
+                                        확장하여 수월히 작업하였습니다.
                                     </div>
                                 </div>
                             </div>
@@ -183,57 +185,45 @@
         margin-top: 1vw;
         font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1vw;
     }
-    .plugin {
-        height: 35vw;
-    }
-    .plugin, .script, .motion, .a11y { margin-top: 20vw; height: 35vw;}
 
-    .plugin:after, .motion:after, .script:after, .a11y:after{
+    .content-section { margin-top: 20vw; height: 35vw;}
+    .content-section:after{
         content:'';
         display:block;
         clear:both;
     }
-    .plugin .img, .motion .img{
-        float: left;
-        margin-right: 8vw;
-        width: 35vw; height: 35vw; background-color: #fff;
-    }
-    .script .img, .a11y .img{
-        float: right;
-        width: 35vw; height: 35vw; background-color: #fff;
-    }
-
-    .plugin .plugin-explane, .motion .motion-explane, .script .script-explane, .a11y .a11y-explane  {
+    .content-section .txt-container {
         position: relative;
         float: left;
         width: 35vw;
         height: 100%;
     }
-
-    .new-explane {
-        position: relative;
-        width: 35vw;
-        height: 100%;
-    }
-
-    .script .script-explane, .a11y .a11y-explane {
-        margin-left: 5vw;
-    }
-
-    .plugin .plugin-explane .title, .motion .motion-explane .title, .script .script-explane .title, .a11y .a11y-explane .title {
+    .content-section .title {
         /* margin-top: 7vw; */
         font-family: 'Nanum Gothic', sans-serif;
         font-weight: 800; font-size: 2.5vw; line-height: 1.5;
     }
-    .plugin .plugin-explane .explane, .motion .motion-explane .explane, .script .script-explane .explane, .a11y .a11y-explane .explane {
+    .content-section .explane {
         margin-top: 3vw;
         font-family: 'Noto Sans KR', sans-serif;
         font-weight: 300; font-size: 1.3vw; line-height: 2;
     }
-    .new-explane .plugin-explane-cnt {
+    .content-section .txt-container .txt-wrap {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+    }
+    .content-section.left-position .img{
+        float: left;
+        margin-right: 8vw;
+        width: 35vw; height: 35vw; background-color: #fff;
+    }
+    .content-section.right-position .img{
+        float: right;
+        width: 35vw; height: 35vw; background-color: #fff;
+    }
+    .content-section.right-position .txt-container {
+        margin-left: 5vw;
     }
 
     .popup-component:after{content:''; display:block; position:absolute; bottom:0px; right:0px; z-index:10; width:100%; height:0%; background:#fff; transition: all 0.8s cubic-bezier(.4,.31,.19,1)}
