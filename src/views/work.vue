@@ -30,11 +30,11 @@
                                         대림 이편한 세상 사이트 리뉴얼
                                         <span>메인 프로젝트</span>
                                     </div>
-                                    <div class="list-content">
-                                        <div>JS / JQuery</div>
+                                    <!-- <div class="list-content">
+                                        <div>성능개선</div>
+                                        <div>개발협업</div>
                                         <div>Gulp</div>
-                                        <div>a11y</div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <a class="list swiper-slide" href="https://github.com/soyfully/make-component" target="_blank">
                                     <div class="list-title">
@@ -81,8 +81,6 @@
 <script>
     import $ from 'jquery'
     import Swiper from 'swiper/js/swiper.esm.bundle'
-    // import { TweenMax } from 'gsap';
-    // import EtribeModal from '../../public/etribeModal.min.js';
 
     export default {
         methods: {
@@ -118,9 +116,6 @@
                 slidesPerView: 'auto'
             })
 
-            // import modal function
-            // importModalFunc().init();
-
             bindEvent();
         }
 
@@ -131,14 +126,6 @@
                 $setWidth = $('.container').width() - 100;
                 $list.css('width', $setWidth);
             })
-
-            // $('.list-wrap .list').on('mouseenter', function () {
-            //     $(this).addClass('on');
-            // })
-
-            // $('.list-wrap .list').on('mouseleave', function () {
-            //     $('.list-wrap .list').removeClass('on');
-            // })
 
             var thisIndex;
 
@@ -192,38 +179,6 @@
             init : init
         }
     }
-
-    // var importModalFunc = function () {
-    //     var $el, $initBtn, $destroyBtn;
-
-    //     function init () {
-    //         $initBtn = document.querySelector('.initPopup');
-    //         $destroyBtn = document.querySelector('.destroyPopup');
-
-    //         bindEvent();
-    //     }
-
-    //     function bindEvent () {
-    //         $initBtn.addEventListener('click', function () {
-    //             $el = new EtribeModal({
-    //                 'selector' : document.querySelector('.layerPopup'),
-    //                 'scrollLock' : JSON.parse(document.querySelector('.scrollLock').value),
-    //                 'useDimm' : JSON.parse(document.querySelector('.useDimm').value),
-    //                 'dimmCss' : document.querySelector('.dimmCss').value,
-    //                 'selectDimm' : eval(document.querySelector('.selectDimm').value),
-    //                 'hideOnClick' : JSON.parse(document.querySelector('.hideOnClick').value),
-    //             });
-    //         });
-
-    //         $destroyBtn.addEventListener('click', function () {
-    //             $el.destroy();
-    //         })
-    //     }
-
-    //     return {
-    //         init : init
-    //     }
-    // }
 </script>
 
 <style scoped>
