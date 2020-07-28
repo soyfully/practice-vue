@@ -16,7 +16,7 @@
                             대림 이편한세상 브랜드 웹사이트 리뉴얼
                         </div>
                         <div class='explane'>
-                            모든 페이지의 스크립트 작성, 그리고 모션에 관련된 마크업을 진행했습니다. 개발과의 협업이 중요한 프로젝트였기에 코드를 재사용할 수 있도록 신경 써 작성했습니다. 필요에 따라 플러그인을 활용했습니다. 또, 기본적인 웹 접근성을 준수했습니다.<br>
+                            모든 페이지의 스크립트 작성, 그리고 모션에 관련된 마크업을 진행했습니다. 개발과의 협업이 중요한 프로젝트였기에 코드를 재사용할 수 있도록 신경써 작성했습니다. 필요에 따라 플러그인을 활용했습니다. 또, 기본적인 웹 접근성을 준수했습니다.<br>
                             <p>
                                 기여도 100% (스크립트) / 15% (퍼블리싱)
                             </p>
@@ -30,7 +30,7 @@
                             <div class='txt-container'>
                                 <div class="txt-wrap">
                                     <div class="title">
-                                        개발 협업을 위한 코드 작성
+                                        개발 협업을 고려한 코드 작성
                                     </div>
                                     <div class="explane">
                                         개발이 붙는 과정에서 스크립트 함수 재사용이 빈번하다는 것을 경험하고,
@@ -47,13 +47,14 @@
                             <div class='txt-container'>
                                 <div class="txt-wrap">
                                     <div class="title">
-                                        모션 인터렉션
+                                        적절한 플러그인 활용
                                     </div>
                                     <div class="explane">
-                                        디자이너와의 협업을 통해 원하는 모션을 구현했습니다.<br>
-                                        주로 CSS 트랜지션, 키프레임을 적용한 클래스를 활용했으며<br>
-                                        CSS 로 작업하기 까다로운 부분만 GSAP 를 사용해<br>
-                                        무겁지 않게, 또 성능에 문제가 없도록 작업했습니다.
+                                        원하는 기능을 만들기 위해 다양한 플러그인을 활용했습니다.
+                                        처음 써보는 플러그인도 API 를 참고해 사용 방법을 숙지하여 프로젝트에 무리없이 응용하였습니다.
+                                        그 중 하나만 설명드리자면 스크롤을 이용한 morphing 구현을 위해 airbnb lottie 플러그인을 찾아 사용했습니다.
+                                        json 파일을 통해 그려지는 svg 의 전체 프레임을 받아와 가용 스크롤 영역의 값과 비교해 비율로 전환 후,
+                                        움직이는 스크롤 수치에 맞춰 재생하여 마치 morphing 을 직접 구현한 것처럼 만들었습니다.
                                     </div>
                                 </div>
                             </div>
@@ -85,13 +86,13 @@
                             <div class='txt-container'>
                                 <div class="txt-wrap">
                                     <div class="title">
-                                        다양한 플러그인
+                                        모션 인터렉션
                                     </div>
                                     <div class="explane">
-                                        Lotti Bodymovin,  scrollMagic 등 다양한 플러그인을 활용해<br>
-                                        크로스 브라우징 또는 반응형 작업 시 생기는 오류를 잡았습니다. <br>
-                                        API 를 참고해 사용 방법을 숙지하고, 프로젝트에 맞게<br>
-                                        확장하여 수월히 작업하였습니다.
+                                        디자이너와의 협업을 통해 원하는 모션을 구현했습니다.<br>
+                                        주로 CSS 트랜지션, 키프레임을 적용한 클래스를 활용했으며<br>
+                                        CSS 로 작업하기 까다로운 부분만 GSAP 를 사용해<br>
+                                        무겁지 않게, 또 성능에 문제가 없도록 작업했습니다.
                                     </div>
                                 </div>
                             </div>
@@ -156,6 +157,9 @@
 
         overflow-y: scroll;
     }
+    .popup-content::-webkit-scrollbar {
+        display: none;
+    }
     .page-content{
         margin-bottom: 100px
     }
@@ -212,15 +216,17 @@
     }
     .content-section.left-position .img{
         float: left;
-        margin-right: 8vw;
         width: 35vw; height: 35vw; background-color: #fff;
     }
     .content-section.right-position .img{
         float: right;
         width: 35vw; height: 35vw; background-color: #fff;
     }
+    .content-section.left-position .txt-container {
+        margin-left: 8vw;
+    }
     .content-section.right-position .txt-container {
-        margin-left: 5vw;
+        margin-left: 4vw;
     }
 
     .popup-component:after{content:''; display:block; position:absolute; bottom:0px; right:0px; z-index:10; width:100%; height:0%; background:#fff; transition: all 0.8s cubic-bezier(.4,.31,.19,1)}
