@@ -152,7 +152,6 @@
 
     import subFooter from '../component/sub-footer.vue'
 
-
     export default {
         components: { subFooter },
 
@@ -177,18 +176,12 @@
             explainSubTit = explain.find('.sub-title');
             accorBtn = $('.accordion button');
 
-            // scroll
             setScrollMagic();
 
-            bindEvent();
-        }
-
-        function bindEvent () {
             $(window).on('scroll', function () {
                 $('.sub, .main').removeClass('reverse');
             })
 
-            // accor click
             accorBtn.on('click', function () {
                 var _this = $(this);
 
@@ -203,8 +196,8 @@
         function setScrollMagic () {
             var controller = new ScrollMagic.Controller({container: '.container', globalSceneOptions: {triggerHook: "onEnter"}});
             var scene = new ScrollMagic.Scene({offset: -100, duration: $('.page-content').offset().top - ( $('.page-explain').height() )})
-                                    .setPin(".page-explain", {pushFollowers: false})
-                                    .addTo(controller);
+                        .setPin(".page-explain", {pushFollowers: false})
+                        .addTo(controller);
 
             scene.on('leave', function () {
                 explainSubTit.addClass('on');

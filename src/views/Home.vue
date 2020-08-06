@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="study-icon">
-                    <div class="go">GO</div>
+                    <a class="go" role='button' v-bind:href="url" target="_blank">G O</a>
                     <img class="turn" :src="image" />
                 </div>
             </div>
@@ -30,12 +30,11 @@
     import $ from 'jquery'
     import image from "../assets/img/soynim.png"
 
-    // import { TweenMax } from 'gsap';
-
     export default {
         data: function () {
             return {
-                image: image
+                image: image,
+                url: "https://velog.io/@soyfully"
             }
         },
         methods: {
@@ -77,13 +76,9 @@
                 setTimeout(closeMotion, 1000);
             }, 1000)
 
-            bindEvents();
-        }
-
-        function bindEvents () {
-            $('.study-icon').on('click', function () {
-                alert('TO BE CONTINUED!');
-            })
+            // $('.study-icon').on('click', function () {
+            //     alert('TO BE CONTINUED!');
+            // })
         }
 
         function closeMotion () {
@@ -177,21 +172,24 @@
     }
 
     .study-icon {
+        z-index: 1;
         position: absolute;
         width: 15vw;
         height: 15vw;
         right: -50px;
         bottom: -30px;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
     .study-icon img {
         width: 100%;
     }
     .study-icon .go {
+        z-index: 2;
+        cursor: pointer;
         position: absolute;
         top: 50%; left: 50%; transform: translate(-50%, -50%);
         font-size: 1.6vw;
-        letter-spacing: 5px;
+        /* letter-spacing: 5px; */
         color: #eab75b;
         text-shadow:
             -1px -1px 0 #fff,

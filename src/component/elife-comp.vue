@@ -226,7 +226,7 @@
         margin-left: 8vw;
     }
     .content-section.right-position .txt-container {
-        margin-left: 4vw;
+        margin-left: 5vw;
     }
 
     .popup-component:after{content:''; display:block; position:absolute; bottom:0px; right:0px; z-index:10; width:100%; height:0%; background:#fff; transition: all 0.8s cubic-bezier(.4,.31,.19,1)}
