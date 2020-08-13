@@ -20,14 +20,12 @@
         <!-- <vue-progress-bar></vue-progress-bar> -->
         <MenuComponent></MenuComponent>
         <router-view/>
-        <!-- <lgComp></lgComp> -->
         <elifeComp></elifeComp>
     </div>
 </template>
 
 <script>
     import MenuComponent from './component/menu-component.vue';
-    // import lgComp from './component/lg-comp.vue';
     import elifeComp from './component/elife-comp.vue';
 
     export default {
@@ -61,16 +59,6 @@
         //     // App.vue의로드가 완료되면 진행률 표시 줄이 완료됩니다.
         //     this.$Progress.finish();
         // },
-    }
-
-
-    var agent = navigator.userAgent.toLowerCase();
-    if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
-        alert('본 사이트는 크롬 및 기타 브라우저(파이어폭스, 사파리, 엣지)에 최적화 되어있습니다!')
-        // ie일 경우
-    }else{
-        // console.log('other')
-        // ie가 아닐 경우
     }
 </script>
 

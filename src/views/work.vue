@@ -30,11 +30,11 @@
                                         대림 이편한 세상 사이트 리뉴얼
                                         <span>메인 프로젝트</span>
                                     </div>
-                                    <!-- <div class="list-content">
-                                        <div>성능개선</div>
-                                        <div>개발협업</div>
+                                    <div class="list-content">
                                         <div>Gulp</div>
-                                    </div> -->
+                                        <div>Pug</div>
+                                        <div>Scss</div>
+                                    </div>
                                 </div>
                                 <a class="list swiper-slide" href="https://github.com/soyfully/make-component" target="_blank">
                                     <div class="list-title">
@@ -294,6 +294,7 @@
         font-family:'Nanum Gothic'; font-weight: 700; font-size: 1.3vw; color: #fff;
     }
     #works .works-list .list .list-title span{
+        vertical-align: bottom;
         margin-left: 0.8vw;
         font-family: 'Noto Sans KR', sans-serif; font-weight: 100; font-size: 1vw;
     }
