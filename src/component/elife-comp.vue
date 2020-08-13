@@ -152,7 +152,7 @@
         position: absolute; z-index: 15; box-sizing: border-box;
         top: 0%; left: 0; padding: 100px;
         width: 100%; height: 100%;
-        background-color: rgb(116, 116, 116);
+        background-color: #e2e2e2;
         color: #000;
 
         overflow-y: scroll;
