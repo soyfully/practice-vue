@@ -195,7 +195,7 @@
 
         function setScrollMagic () {
             var controller = new ScrollMagic.Controller({container: '.container', globalSceneOptions: {triggerHook: "onEnter"}});
-            var scene = new ScrollMagic.Scene({offset: -100, duration: $('.page-content').offset().top - ( $('.page-explain').height() )})
+            var scene = new ScrollMagic.Scene({ offset: -100, duration: $('.page-content').offset().top - ( $('.page-explain').height() * 1.5 ) })
                         .setPin(".page-explain", {pushFollowers: false})
                         .addTo(controller);
 
