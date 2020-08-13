@@ -213,7 +213,7 @@
     #works .container .page-explain .sub-title{
         float: left;
         transition: 0.4s ease all;
-        font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1.3vw; line-height: 2.3;
+        font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1.3vw; line-height: 2.2;
         transition: 0.4s ease all;
     }
     #works .container .page-explain .sub-title > a {
