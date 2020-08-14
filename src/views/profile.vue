@@ -159,7 +159,7 @@
 
         },
         created () {
-            $('html, body').css('background-color','rgb(107, 185, 127)')
+            $('html, body').css('background-color','rgb(157 189 95)')
             .attr('_init', 'true')
             .addClass('profile');
         },
@@ -284,7 +284,7 @@
         display: block;
         position: relative;
         width: 100%;
-        height: 0.6vw;
+        height: 0.4vw;
         background: #fff;
         transition: .6s all ease;
     }
@@ -328,7 +328,7 @@
         display: none;
         height: auto;
         padding: 3vw;
-        background-color: rgb(92, 168, 111, 0.5);
+        background-color: #ffffff0d;
         font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1.3vw; line-height: 2.3; color: #fff;
     }
     .page-explain .title.on, .page-explain .title.on:after {
