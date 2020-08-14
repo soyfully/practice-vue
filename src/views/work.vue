@@ -36,19 +36,9 @@
                                         <div>Scss</div>
                                     </div>
                                 </div>
-                                <a class="list swiper-slide" href="https://github.com/soyfully/make-component" target="_blank">
-                                    <div class="list-title">
-                                        Common UI 플러그인
-                                        <span>서브 프로젝트</span>
-                                    </div>
-                                    <div class="list-content">
-                                        <div>Vanilla JS</div>
-                                        <div>Webpack</div>
-                                    </div>
-                                </a>
                                 <a class="list swiper-slide" href="https://github.com/soyfully/loading-library" target="_blank">
                                     <div class="list-title">
-                                        로딩 아이콘 플러그인
+                                        로딩 UI 컴포넌트
                                         <span>서브 프로젝트</span>
                                     </div>
                                     <div class="list-content">
@@ -59,12 +49,22 @@
                                 </a>
                                 <a class="list swiper-slide" href="https://github.com/soyfully/modal-library" target="_blank">
                                     <div class="list-title">
-                                        레이어 팝업 제어 플러그인
+                                        레이어 팝업 컨트롤
                                         <span>서브 프로젝트</span>
                                     </div>
                                     <div class="list-content">
                                         <div>es6</div>
                                         <div>Typescript</div>
+                                        <div>Webpack</div>
+                                    </div>
+                                </a>
+                                <a class="list swiper-slide" href="https://github.com/soyfully/make-component" target="_blank">
+                                    <div class="list-title">
+                                        Common UI 컴포넌트
+                                        <span>서브 프로젝트</span>
+                                    </div>
+                                    <div class="list-content">
+                                        <div>Vanilla JS</div>
                                         <div>Webpack</div>
                                     </div>
                                 </a>
