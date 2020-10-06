@@ -234,19 +234,22 @@
     #profile .container::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera*/
     }
-    #profile .container .page-explain{}
-    #profile .container .page-explain:after{
+    #profile .container .page-explain {
+        width: 90%;
+        display: flex;
+    }
+    /* #profile .container .page-explain:after{
         content:'';
         display:block;
         clear:both;
-    }
+    } */
     #profile .container .page-explain .title{
-        float: left;
+        /* float: left; */
         margin-right: 10vw;
         font-family: 'OPTIImprovNewWideNine'; font-size: 4.5vw;
     }
     #profile .container .page-explain .sub-title{
-        float: left;
+        /* float: left; */
         font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1.3vw; line-height: 2.2;
         transition: 0.4s ease all;
     }

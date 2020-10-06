@@ -5,10 +5,10 @@
                 <div class='page-explain'>
                     <div class='title'>Works</div>
                     <div class='sub-title'>
-                        회사를 다니며 진행한 프로젝트 중 몇가지를 골라 정리했습니다. <br>
-                        그 외, 스터디 및 회사에서 편하게 사용하기 위해 <br>
-                        개인적으로 작업한 프로젝트도 있습니다. <br>
-                        더 많은 작업물들은 <a href='https://www.rocketpunch.com/@soyfully' target="_blank">여기</a>를 클릭해주세요.
+                        회사를 다니며 진행한 프로젝트 중 몇가지를 골라 정리했습니다.<br>
+                        그 외, 스터디 및 회사에서 수월한 프로젝트 진행을 위해<br>
+                        만들어놓은 개인 작업물도 있습니다.<br>
+                        더 많은 프로젝트는 <a href='https://www.rocketpunch.com/@soyfully' target="_blank">여기</a>를 클릭해주세요.
                     </div>
                 </div>
                 <div class='page-content'>
@@ -200,18 +200,25 @@
         width: 100%; height: 100%;
         /* margin-top: 100px; */
     }
-    #works .container .page-explain{padding: 100px 100px 0 100px;}
-    #works .container .page-explain:after{
+    #works .container .page-explain{
+        padding: 100px 100px 0 100px;
+        box-sizing: border-box;
+        width: 90%;
+        display: flex;
+    }
+    /* #works .container .page-explain:after{
         content:'';
         display:block;
         clear:both;
-    }
+    } */
     #works .container .page-explain .title{
-        float: left; margin-right: 10vw;
+        /* float: left; */
+        margin-right: 10vw;
         font-family: 'OPTIImprovNewWideNine'; font-size: 4.5vw;
     }
     #works .container .page-explain .sub-title{
-        float: left;
+        /* float: left; */
+        word-break: keep-all;
         transition: 0.4s ease all;
         font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1.3vw; line-height: 2.2;
         transition: 0.4s ease all;
