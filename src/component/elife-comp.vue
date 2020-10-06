@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="page-content">
-                        <div class='content-section left-position'>
+                        <div class='content-section full-position'>
                             <div class='img'>
                                 <img :src="eLife01" />
                             </div>
@@ -40,7 +40,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='content-section right-position'>
+                        <div class='content-section full-position'>
                             <div class='img'>
                                 <img :src="eLife02" />
                             </div>
@@ -59,9 +59,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='content-section left-position'>
+                        <div class='content-section full-position'>
                             <div class='img'>
-                                <img :src="eLife03" />
+                                <!-- <img :src="eLife03" /> -->
                             </div>
                             <div class='txt-container'>
                                 <div class="txt-wrap">
@@ -79,9 +79,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='content-section right-position'>
+                        <div class='content-section full-position'>
                             <div class='img'>
-                                <img :src="eLife04" />
+                                <!-- <img :src="eLife04" /> -->
                             </div>
                             <div class='txt-container'>
                                 <div class="txt-wrap">
@@ -200,7 +200,7 @@
         font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1vw;
     }
 
-    .content-section { margin-top: 20vw;}
+    .content-section { margin-top: 18vw;}
     .content-section:after{
         content:'';
         display:block;
@@ -222,7 +222,7 @@
     .content-section .title {
         /* margin-top: 7vw; */
         font-family: 'Nanum Gothic', sans-serif;
-        font-weight: 800; font-size: 2.5vw; line-height: 1.5;
+        font-weight: 800; font-size: 2vw; line-height: 1.5;
     }
     .content-section .explane {
         margin-top: 3vw;
@@ -250,7 +250,7 @@
     }
     .content-section.full-position .img {
         width: 100%;
-        height: 15vw;
+        height: 27vw;
         background: #fff;
     }
     .content-section.full-position .txt-container {
@@ -262,15 +262,15 @@
         position: relative;
         top: 0;
         transform: translateY(0);
+        display: flex;
     }
     .content-section.full-position .txt-wrap .title {
-        float: left;
+        /* flex: 1 */
     }
     .content-section.full-position .txt-wrap .explane {
-        float: left;
         margin-top: 0;
         margin-left: 10vw;
-        width: 60vw;
+        flex: 1
     }
 
 

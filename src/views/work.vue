@@ -5,9 +5,9 @@
                 <div class='page-explain'>
                     <div class='title'>Works</div>
                     <div class='sub-title'>
-                        회사를 다니며 진행한 작업물들 중 몇가지를 골라 나열했습니다. <br>
-                        공식적인 프로젝트 외에 공부 및 회사에서 편하게 사용하기 위해 <br>
-                        개인적으로 작업한 서브 프로젝트도 있습니다. <br>
+                        회사를 다니며 진행한 프로젝트 중 몇가지를 골라 정리했습니다. <br>
+                        그 외, 스터디 및 회사에서 편하게 사용하기 위해 <br>
+                        개인적으로 작업한 프로젝트도 있습니다. <br>
                         더 많은 작업물들은 <a href='https://www.rocketpunch.com/@soyfully' target="_blank">여기</a>를 클릭해주세요.
                     </div>
                 </div>
