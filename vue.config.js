@@ -3,6 +3,9 @@ const webpack = require('webpack')
 
 module.exports = {
     // lintOnSave: false,
+
+    publicPath: '', // https://stackoverflow.com/questions/50809987/vue-cli-build-and-run-index-html-file-without-server
+
     configureWebpack: (config) => {
         config.plugins = [
             ...

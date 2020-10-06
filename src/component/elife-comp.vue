@@ -25,7 +25,7 @@
                     <div class="page-content">
                         <div class='content-section left-position'>
                             <div class='img'>
-                                <img src="" alt="">
+                                <img :src="eLife01" />
                             </div>
                             <div class='txt-container'>
                                 <div class="txt-wrap">
@@ -42,7 +42,7 @@
                         </div>
                         <div class='content-section right-position'>
                             <div class='img'>
-                                <img src="" alt="">
+                                <img :src="eLife02" />
                             </div>
                             <div class='txt-container'>
                                 <div class="txt-wrap">
@@ -52,7 +52,7 @@
                                     <div class="explane">
                                         원하는 기능을 만들기 위해 다양한 플러그인을 활용했습니다.
                                         처음 써보는 플러그인도 API 를 참고해 사용 방법을 숙지하여 프로젝트에 무리없이 응용하였습니다.
-                                        그 중 하나만 설명드리자면 스크롤을 이용한 morphing 구현을 위해 airbnb lottie 플러그인을 찾아 사용했습니다.
+                                        예를 들어, 스크롤을 이용한 morphing 구현을 위해 airbnb lottie 플러그인을 찾아 사용했습니다.
                                         json 파일을 통해 그려지는 svg 의 전체 프레임을 받아와 가용 스크롤 영역의 값과 비교해 비율로 전환 후,
                                         움직이는 스크롤 수치에 맞춰 재생하여 마치 morphing 을 직접 구현한 것처럼 만들었습니다.
                                     </div>
@@ -61,7 +61,7 @@
                         </div>
                         <div class='content-section left-position'>
                             <div class='img'>
-                                <img src="" alt="">
+                                <img :src="eLife03" />
                             </div>
                             <div class='txt-container'>
                                 <div class="txt-wrap">
@@ -81,7 +81,7 @@
                         </div>
                         <div class='content-section right-position'>
                             <div class='img'>
-                                <img src="" alt="">
+                                <img :src="eLife04" />
                             </div>
                             <div class='txt-container'>
                                 <div class="txt-wrap">
@@ -89,15 +89,16 @@
                                         모션 인터렉션
                                     </div>
                                     <div class="explane">
-                                        디자이너와의 협업을 통해 원하는 모션을 구현했습니다.<br>
-                                        주로 CSS 트랜지션, 키프레임을 적용한 클래스를 활용했으며<br>
-                                        CSS 로 작업하기 까다로운 부분만 GSAP 를 사용해<br>
+                                        디자이너와의 협업을 통해 원하는 모션을 구현했습니다.
+                                        주로 CSS 트랜지션, 키프레임을 적용한 클래스를 활용했으며
+                                        CSS 로 작업하기 까다로운 부분만 GSAP 를 사용해
                                         무겁지 않게, 또 성능에 문제가 없도록 작업했습니다.
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <subFooter _url='https://www.elife.co.kr/Mnmn_main.action' _message='Go to site'></subFooter>
                 </div>
             </div>
@@ -107,8 +108,20 @@
 
 <script>
     import subFooter from '../component/sub-footer.vue';
+    import eLife01 from "../assets/img/e-life-01.svg"
+    import eLife02 from "../assets/img/e-life-02.svg"
+    import eLife03 from "../assets/img/e-life-03.svg"
+    import eLife04 from "../assets/img/e-life-04.svg"
 
     export default {
+        data: function () {
+            return {
+                eLife01 : eLife01,
+                eLife02 : eLife02,
+                eLife03 : eLife03,
+                eLife04 : eLife04,
+            }
+        },
         components: { subFooter },
 
         mounted () {
@@ -187,17 +200,24 @@
         font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1vw;
     }
 
-    .content-section { margin-top: 20vw; height: 35vw;}
+    .content-section { margin-top: 20vw;}
     .content-section:after{
         content:'';
         display:block;
         clear:both;
     }
+    .content-section .img {
+        overflow-y: scroll;
+        width: 35vw; height: 35vw;
+    }
+    .content-section .img::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+    .content-section .img img {width: 100%}
     .content-section .txt-container {
         position: relative;
-        float: left;
-        width: 35vw;
-        height: 100%;
+        width: 40vw;
+        height: 35vw;
     }
     .content-section .title {
         /* margin-top: 7vw; */
@@ -216,18 +236,43 @@
     }
     .content-section.left-position .img{
         float: left;
-        width: 35vw; height: 35vw; background-color: #fff;
     }
     .content-section.right-position .img{
         float: right;
-        width: 35vw; height: 35vw; background-color: #fff;
     }
     .content-section.left-position .txt-container {
+        float: left;
         margin-left: 8vw;
     }
     .content-section.right-position .txt-container {
-        margin-left: 5vw;
+        float: right;
+        margin-right: 8vw;
     }
+    .content-section.full-position .img {
+        width: 100%;
+        height: 15vw;
+        background: #fff;
+    }
+    .content-section.full-position .txt-container {
+        width: auto;
+        height: auto;
+        margin-top: 3vw;
+    }
+    .content-section.full-position .txt-wrap {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+    }
+    .content-section.full-position .txt-wrap .title {
+        float: left;
+    }
+    .content-section.full-position .txt-wrap .explane {
+        float: left;
+        margin-top: 0;
+        margin-left: 10vw;
+        width: 60vw;
+    }
+
 
     .popup-component:after{content:''; display:block; position:absolute; bottom:0px; right:0px; z-index:10; width:100%; height:0%; background:#fff; transition: all 0.8s cubic-bezier(.4,.31,.19,1)}
     .popup-component.open:after{height: 100%;}
