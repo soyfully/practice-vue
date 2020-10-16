@@ -5,10 +5,10 @@
             <div class='page-explain'>
                 <div class='title'>Profile</div>
                 <div class='sub-title'>
-                    자바스크립트, 프레임워크(Vue.js) 그리고 성능에 관심이 많습니다. <br>
+                    JS / CSS 모션, 프레임워크 그리고 성능에 관심이 많습니다. <br>
                     또한 플러그인, 라이브러리의 사용을 필요 외엔 최소화하기 위해<br>
-                    JS 에 대한 이해와 기본기를 다지려 노력하고있습니다.<br>
-                    나아가 항상 새로운 시도를 할 수 있는 프론트엔드 개발자가 되고싶습니다. <br>
+                    JS 에 대한 이해와 기본기를 다지려 노력하고 있습니다.<br>
+                    나아가 항상 새로운 시도를 할 수 있는 프론트엔드 개발자가 되고 싶습니다. <br>
                 </div>
             </div>
             <div class='page-content'>
