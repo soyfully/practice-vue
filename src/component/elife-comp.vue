@@ -181,7 +181,7 @@
         width: 100%; height: auto;
     }
     .page-explain{
-        margin-top: 30%;
+        margin-top: 20%;
     }
     .page-explain .title{
         margin-right: 10vw;
