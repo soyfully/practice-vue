@@ -32,8 +32,7 @@
                                     </div>
                                     <div class="list-content">
                                         <div>Gulp</div>
-                                        <div>Pug</div>
-                                        <div>Scss</div>
+                                        <div>Pug / Scss</div>
                                     </div>
                                 </div>
                                 <div class="list swiper-slide">
@@ -42,9 +41,9 @@
                                         <span>메인 프로젝트</span>
                                     </div>
                                     <div class="list-content">
+                                        <div>반응형</div>
                                         <div>Gulp</div>
-                                        <div>Pug</div>
-                                        <div>Scss</div>
+                                        <div>Pug / Scss</div>
                                     </div>
                                 </div>
                                 <a class="list swiper-slide" href="https://github.com/soyfully/loading-library" target="_blank">

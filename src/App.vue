@@ -21,15 +21,17 @@
         <MenuComponent></MenuComponent>
         <router-view/>
         <elifeComp></elifeComp>
+        <dongaComp></dongaComp>
     </div>
 </template>
 
 <script>
     import MenuComponent from './component/menu-component.vue';
     import elifeComp from './component/elife-comp.vue';
+    import dongaComp from './component/donga-comp.vue';
 
     export default {
-        components: { MenuComponent , elifeComp},
+        components: { MenuComponent , elifeComp, dongaComp},
 
         // created () {
         //     // App.vue가 처음로드되면 진행률 표시 줄을 시작합니다
