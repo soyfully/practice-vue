@@ -93,44 +93,31 @@
     }
 
     var worksEvent = function () {
-        // var $list, $setWidth;
-
         function init () {
-            // $setWidth = $('.container').width() - 100;
-            // $list = $('.works-list .list-wrap');
-
             $('html, body').css('background-color','lightsteelblue');
-
-            // set width scroll el of work list
-            // $list.css('width', $setWidth);
 
             bindEvent();
 
-            // set swiper
-            setTimeout(function () {
-                new Swiper ('.swiper-container', {
-                    observer: true,
-                    observeParents: true,
-                    observeSlideChildren: true,
-                    direction: 'horizontal',
-                    // loop: false,
-                    mousewheel: true,
-                    grabCursor: true,
-                    freeMode: true,
-                    freeModeSticky: true,
-                    slidesPerView: 'auto',
-                })
-            }, 500)
+            window.onload = function() {
+                // set swiper
+                setTimeout(function () {
+                    new Swiper ('.swiper-container', {
+                        observer: true,
+                        observeParents: true,
+                        observeSlideChildren: true,
+                        direction: 'horizontal',
+                        // loop: false,
+                        mousewheel: true,
+                        grabCursor: true,
+                        freeMode: true,
+                        // freeModeSticky: true,
+                        slidesPerView: 'auto',
+                    })
+                }, 0)
+            }
         }
 
         function bindEvent () {
-            // resize
-            $(window).on('resize', function () {
-                // init list width
-                // $setWidth = $('.container').width() - 100;
-                // $list.css('width', $setWidth);
-            })
-
             var thisIndex;
 
             $('.list-wrap .list').on('click', function () {
