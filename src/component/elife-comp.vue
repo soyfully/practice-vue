@@ -24,8 +24,13 @@
                     </div>
                     <div class="page-content">
                         <div class='content-section full-position'>
-                            <div class='img'>
-                                <img :src="eLife01" />
+                            <div class='img-cont'>
+                                <div class="img-wrap">
+                                    <img :src="eLife01" />
+                                </div>
+                                <div class="view-all-code">
+                                    + 전체 소스 보기
+                                </div>
                             </div>
                             <div class='txt-container'>
                                 <div class="txt-wrap">
@@ -41,8 +46,10 @@
                             </div>
                         </div>
                         <div class='content-section full-position'>
-                            <div class='img'>
-                                <img :src="eLife02" />
+                            <div class='img-cont'>
+                                <div class="img-wrap">
+                                    <img :src="eLife02" />
+                                </div>
                             </div>
                             <div class='txt-container'>
                                 <div class="txt-wrap">
@@ -60,8 +67,10 @@
                             </div>
                         </div>
                         <div class='content-section full-position'>
-                            <div class='img'>
-                                <!-- <img :src="eLife03" /> -->
+                            <div class='img-cont'>
+                                <div class="img-wrap">
+                                    <!-- <img :src="eLife03" /> -->
+                                </div>
                             </div>
                             <div class='txt-container'>
                                 <div class="txt-wrap">
@@ -80,8 +89,10 @@
                             </div>
                         </div>
                         <div class='content-section full-position'>
-                            <div class='img'>
-                                <!-- <img :src="eLife04" /> -->
+                            <div class='img-cont'>
+                                <div class="img-wrap">
+                                    <!-- <img :src="eLife04" /> -->
+                                </div>
                             </div>
                             <div class='txt-container'>
                                 <div class="txt-wrap">
@@ -206,14 +217,6 @@
         display:block;
         clear:both;
     }
-    .content-section .img {
-        overflow-y: scroll;
-        width: 35vw; height: 35vw;
-    }
-    .content-section .img::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera*/
-    }
-    .content-section .img img {width: 100%}
     .content-section .txt-container {
         position: relative;
         width: 40vw;
@@ -234,24 +237,38 @@
         top: 50%;
         transform: translateY(-50%);
     }
-    .content-section.left-position .img{
-        float: left;
-    }
-    .content-section.right-position .img{
-        float: right;
-    }
-    .content-section.left-position .txt-container {
-        float: left;
-        margin-left: 8vw;
-    }
-    .content-section.right-position .txt-container {
-        float: right;
-        margin-right: 8vw;
-    }
-    .content-section.full-position .img {
+    .content-section.full-position .img-cont {
         width: 100%;
         height: 27vw;
+        position: relative;
+    }
+    .content-section.full-position .img-cont .img-wrap {
+        width: 100%;
+        height: 100%;
         background: #fff;
+        overflow-y: scroll;
+    }
+    .content-section.full-position .img-cont .img-wrap::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+    .content-section.full-position .img-cont .img-wrap img {
+        width: 100%;
+    }
+    .content-section.full-position .img-cont .view-all-code {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+        font-size: 1vw;
+        color: #9fa7b3;
+        cursor: pointer;
+
+        transition: 0.3s cubic-bezier(0.66, 0, 0.34, 1) all;
+        opacity: 0;
+    }
+    .content-section.full-position .img-cont:hover .view-all-code {
+        opacity: 1;
     }
     .content-section.full-position .txt-container {
         width: auto;

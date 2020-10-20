@@ -105,12 +105,10 @@
                         observer: true,
                         observeParents: true,
                         observeSlideChildren: true,
-                        direction: 'horizontal',
-                        // loop: false,
                         mousewheel: true,
                         grabCursor: true,
                         freeMode: true,
-                        // freeModeSticky: true,
+                        freeModeSticky: true,
                         slidesPerView: 'auto',
                     })
                 }, 0)
