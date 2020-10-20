@@ -93,37 +93,42 @@
     }
 
     var worksEvent = function () {
-        var $list, $setWidth;
+        // var $list, $setWidth;
 
         function init () {
-            $setWidth = $('.container').width() - 100;
-            $list = $('.works-list .list-wrap');
+            // $setWidth = $('.container').width() - 100;
+            // $list = $('.works-list .list-wrap');
 
             $('html, body').css('background-color','lightsteelblue');
 
             // set width scroll el of work list
-            $list.css('width', $setWidth);
-
-            // set swiper
-            new Swiper ('.swiper-container', {
-                direction: 'horizontal',
-                loop: false,
-                mousewheel: true,
-                grabCursor: true,
-                freeMode: true,
-                freeModeSticky: true,
-                slidesPerView: 'auto'
-            })
+            // $list.css('width', $setWidth);
 
             bindEvent();
+
+            // set swiper
+            setTimeout(function () {
+                new Swiper ('.swiper-container', {
+                    observer: true,
+                    observeParents: true,
+                    observeSlideChildren: true,
+                    direction: 'horizontal',
+                    // loop: false,
+                    mousewheel: true,
+                    grabCursor: true,
+                    freeMode: true,
+                    freeModeSticky: true,
+                    slidesPerView: 'auto',
+                })
+            }, 500)
         }
 
         function bindEvent () {
             // resize
             $(window).on('resize', function () {
                 // init list width
-                $setWidth = $('.container').width() - 100;
-                $list.css('width', $setWidth);
+                // $setWidth = $('.container').width() - 100;
+                // $list.css('width', $setWidth);
             })
 
             var thisIndex;
@@ -190,8 +195,8 @@
     #works .container {
         position: relative; top: 0;
         height: 100%;
-        /* width: calc(100% - 200px);
-        margin: 0 100px 0 100px; */
+        padding: 100px;
+        box-sizing: border-box;
         overflow: hidden;
     }
     #works .container > .wrap {
@@ -200,8 +205,6 @@
         /* margin-top: 100px; */
     }
     #works .container .page-explain{
-        padding: 100px 100px 0 100px;
-        box-sizing: border-box;
         width: 90%;
         display: flex;
     }
@@ -230,15 +233,14 @@
     }
     #works .container .page-content{
         clear: both;
+        width: 100%;
         position: absolute;
         bottom: 0;
     }
     #works .works-list {
         height: auto;
-        margin-bottom: 100px;
     }
     #works .works-list .sub-title {
-        padding: 0 100px 0 100px;
         font-family: 'OPTIImprovNewWideNine'; font-size: 2.5vw;
         margin-bottom: 3.5vw;
         display: flex;
@@ -290,12 +292,12 @@
     }
     #works .works-list .list-wrap {
         position: relative;
-        padding-left: 100px;
+        width: 100%;
     }
     #works .works-list .list-wrap::-webkit-scrollbar { display: none; }
     #works .works-list .wrap {width: max-content; height: auto;}
     #works .works-list .list {position: relative; overflow: hidden; display: inline-block; box-sizing: border-box; margin-right: 2.5vw; width: auto; height: 14vw; padding: 3vw; border: 0.6vw solid; cursor: pointer;}
-    #works .works-list .list:last-child {margin-right: 100px;}
+    #works .works-list .list:last-child {margin-right: 0}
     #works .works-list .list .list-title {
         font-family:'Nanum Gothic'; font-weight: 700; font-size: 1.3vw; color: #fff;
     }
