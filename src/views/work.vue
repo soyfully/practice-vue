@@ -98,21 +98,19 @@
 
             bindEvent();
 
-            window.onload = function() {
-                // set swiper
-                setTimeout(function () {
-                    new Swiper ('.swiper-container', {
-                        observer: true,
-                        observeParents: true,
-                        observeSlideChildren: true,
-                        mousewheel: true,
-                        grabCursor: true,
-                        freeMode: true,
-                        freeModeSticky: true,
-                        slidesPerView: 'auto',
-                    })
-                }, 0)
-            }
+            // set swiper
+            setTimeout(function () {
+                new Swiper ('.swiper-container', {
+                    observer: true,
+                    observeParents: true,
+                    observeSlideChildren: true,
+                    mousewheel: true,
+                    grabCursor: true,
+                    freeMode: true,
+                    freeModeSticky: true,
+                    slidesPerView: 'auto',
+                })
+            }, 0)
         }
 
         function bindEvent () {

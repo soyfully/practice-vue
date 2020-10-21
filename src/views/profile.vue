@@ -315,9 +315,11 @@
     #profile .container .page-content .accordion-item .acc-panel{
         display: none;
         height: auto;
-        padding: 3vw;
         background-color: #ffffff0d;
         font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1.3vw; line-height: 2.3; color: #fff;
+    }
+    #profile .container .page-content .accordion-item .acc-panel .datatable-report{
+        padding: 3vw;
     }
     .page-explain .title.on, .page-explain .title.on:after {
         animation-iteration-count: 1;
