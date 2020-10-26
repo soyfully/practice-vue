@@ -180,7 +180,7 @@
 
         function setScrollMagic () {
             var controller = new ScrollMagic.Controller({container: '.container', globalSceneOptions: {triggerHook: "onEnter"}});
-            var scene = new ScrollMagic.Scene({ offset: -100, duration: $('.page-content').offset().top - ( $('.page-explain').height() * 1.5 ) })
+            var scene = new ScrollMagic.Scene({ offset: 0, duration: $('.page-content').offset().top - ( $('.page-explain').height() * 1.5 ) })
                         .setPin(".page-explain", {pushFollowers: false})
                         .addTo(controller);
 
@@ -219,8 +219,9 @@
     }
     #profile .container {
         position: absolute; top: 0;
-        width: calc(100% - 200px); height: 100%;
-        margin: 0 100px 100px 100px;
+        width: 100%; height: 100%;
+        padding: 100px;
+        box-sizing: border-box;
         overflow-x: scroll;
     }
     #profile .container .wrap {

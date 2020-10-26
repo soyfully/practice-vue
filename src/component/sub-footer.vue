@@ -52,8 +52,6 @@
     .back .txt {
         margin-left: 10vw; color: #000;
     }
-
-    #footer.profile-ver {margin-bottom: 100px}
     #footer.profile-ver .back em {background-color: #fff;}
     #footer.profile-ver .back .txt {color: #fff;}
 </style>
