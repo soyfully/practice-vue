@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Router from './router/router' // 라우터
-import App from './App.vue' // app
+import App from './app/App' // app
 
 import './assets/reset.css'; // reset css
 import './assets/font.css'; // font css
+
+import jsonLabel from './assets/jsonLabel.json'; // font css
+
+Vue.prototype.$jsonLabel = jsonLabel;
 
 Vue.config.productionTip = false;
 Vue.use(Vuex);
@@ -12,10 +16,14 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
   state: {
     isInitMotionState: false,
+    isCurrentRouter: 'app.vue-init',
   },
   mutations: {
     mutateInitMotionState (state, bool) {
       state.isInitMotionState = bool;
+    },
+    mutateCurrentRouter (state, string) {
+      state.isCurrentRouter = string;
     }
   }
 })

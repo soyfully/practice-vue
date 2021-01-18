@@ -1,0 +1,41 @@
+body, html {
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden;
+    box-sizing: border-box; 
+    color: #fff; 
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+a {
+    text-decoration: none; 
+    color: #fff
+}
+#app {
+    height: 100%;
+}
+.move {
+    animation:detail_move_animate 1.5s forwards cubic-bezier(.66,0,.34,1);
+}
+@keyframes detail_move_animate {
+    0% {transform:translate(0, 0);}
+    100% {transform:translate(0, -50%);}
+}
+.reverse {
+    animation:detail_reverse_animate 1.5s forwards cubic-bezier(.66,0,.34,1);
+}
+@keyframes detail_reverse_animate {
+    0% {transform:translate(0, -50%);}
+    100% {transform:translate(0, 0%);}
+}
+.dimm {
+    position: absolute; 
+    top: 0; 
+    z-index: 5; 
+    display: none;
+    width: 100%; 
+    height: 100%; 
+    background: #000; 
+    opacity: 0.8;
+}

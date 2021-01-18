@@ -13,23 +13,22 @@
 		<div id="app"></div>
 		<!-- built files will be auto injected -->
 		<script>
-		var userAgent = window.navigator.userAgent;
-		var isChrome = userAgent.indexOf('Chrome');
-		var isChromeMobile = userAgent.indexOf('CriOS');
-		var isSamsungBrowser = userAgent.indexOf('SamsungBrowser');
-		var isWindows = userAgent.indexOf('Windows NT');
-		var isEdge = userAgent.indexOf('Edge');
-		var isIE = userAgent.indexOf('Trident');
+			var userAgent = window.navigator.userAgent;
+			var isChrome = userAgent.indexOf('Chrome');
+			var isChromeMobile = userAgent.indexOf('CriOS');
+			var isSamsungBrowser = userAgent.indexOf('SamsungBrowser');
+			var isWindows = userAgent.indexOf('Windows NT');
+			var isEdge = userAgent.indexOf('Edge');
+			var isIE = userAgent.indexOf('Trident');
 
-		// 크롬 브라우저 체크
-		if(isChrome > -1 || isChromeMobile > -1){
-			if(isSamsungBrowser < 0 && isEdge < 0){
-				// console.log('chrome')
+			// 크롬 브라우저 체크
+			if(isChrome > -1 || isChromeMobile > -1){
+				if(isSamsungBrowser < 0 && isEdge < 0){
+					// console.log('chrome')
+				}
+			} else {
+				alert("이 포트폴리오는 크롬 브라우저(1920 x 1080) 에 최적화 되어있습니다. 크롬 이외의 브라우저 대응은 추후 업데이트 예정입니다.")
 			}
-		} else {
-			alert("이 포트폴리오는 크롬 브라우저(1920 x 1080) 에 최적화 되어있습니다. 크롬 이외의 브라우저 대응은 추후 업데이트 예정입니다.")
-		}
-
 		</script>
 	</body>
 </html>

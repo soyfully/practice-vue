@@ -1,74 +1,43 @@
 import $ from 'jquery'
-import ScrollMagic from 'scrollmagic';
-import subFooter from '../../component/sub-footer.vue'
+import SubFooter from '../../component/SubFooter/SubFooter.vue'
 
 export default {
-    components: { subFooter },
+    components: { SubFooter },
 
-    methods: {
-
+    data: function () {
+        return {
+            profileJson: this.$jsonLabel.profile,
+            defaultColor: 'rgb(157 189 95)',
+        }
     },
-    created () {
-        $('html, body').css('background-color','rgb(157 189 95)')
-        .attr('_init', 'true')
-        .addClass('profile');
+    created() {
+        this.$store.commit('mutateCurrentRouter', 'profile');
     },
     mounted () {
-        profileEvent().init();
+        this.changeDefaultBackColor();
+        if (this.$store.state.isInitMotionState) {
+
+            // return false;
+        }
     },
-}
+    methods: {
+        changeDefaultBackColor() {
+            $('html, body').css('background-color', this.defaultColor);
+        },
+        openFirstAccordionList() {
 
-var profileEvent = function () {
-    var explain, explainSubTit, accorBtn;
+        },
+        accordionController(event) {
+            const accordionBtn = $(event.currentTarget);
+            const accordionDesc = accordionBtn.next('.acc-panel');
 
-    function init () {
-        explain = $('.page-explain');
-        explainSubTit = explain.find('.sub-title');
-        accorBtn = $('.accordion button');
-
-        setScrollMagic();
-
-        $(window).on('scroll', function () {
-            $('.sub, .main').removeClass('reverse');
-        })
-
-        accorBtn.on('click', function () {
-            var _this = $(this);
-
-            if (!_this.hasClass('on')) {
-                openAccordion(_this);
+            if (accordionBtn.hasClass('on')) {
+                accordionBtn.removeClass('on');
+                accordionDesc.slideUp(350);
             } else {
-                closeAccordion(_this);
+                accordionBtn.addClass('on');
+                accordionDesc.slideDown(350);
             }
-        })
-    }
-
-    function setScrollMagic () {
-        var controller = new ScrollMagic.Controller({container: '.container', globalSceneOptions: {triggerHook: "onEnter"}});
-        var scene = new ScrollMagic.Scene({ offset: 0, duration: $('.page-content').offset().top - ( $('.page-explain').height() * 1.5 ) })
-                    .setPin(".page-explain", {pushFollowers: false})
-                    .addTo(controller);
-
-        scene.on('leave', function () {
-            explainSubTit.addClass('on');
-        });
-
-        scene.on('enter', function () {
-            explainSubTit.removeClass('on');
-        })
-    }
-
-    function openAccordion (_this) {
-        _this.addClass('on');
-        _this.next('.acc-panel').slideDown(350);
-    }
-
-    function closeAccordion (_this) {
-        _this.removeClass('on');
-        _this.next('.acc-panel').slideUp(350);
-    }
-
-    return {
-        init : init
-    }
+        }
+    },
 }
