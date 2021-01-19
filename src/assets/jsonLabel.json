@@ -44,6 +44,59 @@
                 ]
             }
         ]
+    },
+    "work": {
+        "title": "Work",
+        "subTitle": {
+            "desc1": "회사를 다니며 진행한 프로젝트 중 몇 가지를 골라 정리했습니다.",
+            "desc2": "그 외, 스터디 및 회사에서 수월한 프로젝트 진행을 위해",
+            "desc3": "만들어놓은 개인 작업물도 있습니다.",
+            "desc4": "더 많은 프로젝트는",
+            "desc5": "를 클릭해 주세요.",
+            "link": "https://www.rocketpunch.com/@soyfully",
+            "linkText": "여기"
+        },
+        "workList": [
+            {
+                "title": "현대 제네시스 BTO 구축 / 운영 ",
+                "subTitle": "메인 프로젝트",
+                "skill": [
+                    "Vue.js",
+                    "Typescript",
+                    "Scss",
+                    "Json"
+                ]
+            },
+            {
+                "title": "대림 이편한 세상 사이트 리뉴얼",
+                "subTitle": "메인 프로젝트",
+                "skill": [
+                    "Gulp",
+                    "Pug",
+                    "Scss"
+                ]
+            },
+            {
+                "link": "https://github.com/soyfully/loading-library",
+                "title": "Loading Icon UI Plugin",
+                "subTitle": "서브 프로젝트",
+                "skill": [
+                    "es6",
+                    "Typescript",
+                    "Webpack"
+                ]
+            },
+            {
+                "title": "동아제약 OTC 통합 브랜드 사이트 구축",
+                "subTitle": "메인 프로젝트",
+                "skill": [
+                    "반응형",
+                    "Gulp",
+                    "Pug",
+                    "Scss"
+                ]
+            }
+        ]
     }
 }
 
