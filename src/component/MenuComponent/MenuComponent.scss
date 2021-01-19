@@ -19,8 +19,7 @@
 .menu-icon .icon .line.line-1 {top: 0; width: 50%}
 .menu-icon .icon .line.line-2 {top: 25%; width: 80%}
 .menu-icon .icon .line.line-3 {top: 50%; width: 60%}
-
-.menu-icon.on .icon .line {width: 100%}
+.menu-icon:hover .icon .line {width: 100%}
 
 .content-icon {
     position: fixed; z-index: 2;

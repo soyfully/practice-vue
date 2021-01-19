@@ -8,7 +8,7 @@ export default {
         }
     },
     mounted () {
-
+        this.clickRouterLink();
     },
     methods: {
         menuOpener() {
@@ -33,13 +33,10 @@ export default {
                 $('.menu-component').removeClass('open');
             }, 600)
         },
+        clickRouterLink() {
+            $('.menu-list a').on('click', ()=>{
+                this.menuCloser();
+            })
+        }
     }
 }
-
-//         openIcon.on('mouseenter', function () {
-//             openIcon.addClass('on');
-//         })
-
-//         openIcon.on('mouseleave', function () {
-//             openIcon.removeClass('on');
-//         })
