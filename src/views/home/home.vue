@@ -12,8 +12,8 @@
                 <div class="bottom_txt">
                     <span class='ani'> Front-end developer,</span>
                     and interested in <br>
-                    interaction with <span style='display:inline-block' class='ani'>JS</span> <br>
-                    and <span style='display:inline-block' class='ani'>framework.</span>
+                    Typescript / <span style='display:inline-block' class='ani'>Vue js</span> <br>
+                    and <span style='display:inline-block' class='ani'>Javascript.</span>
                     <div class='copyrigth'>
                         ⓒ 2020. KIM SOI All Rights Reserved.
                     </div>

@@ -3,8 +3,7 @@ import $ from 'jquery'
 export default {
     data: function () {
         return {
-            profileJson: this.$jsonLabel.profile,
-            defaultColor: 'rgb(157 189 95)',
+            menuJson: this.$jsonLabel.menu,
         }
     },
     mounted () {

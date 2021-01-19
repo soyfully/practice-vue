@@ -36,16 +36,16 @@
                     <router-link to="/work">Works</router-link>
                 </div>
                 <div class="contact">
-                    <div class="contact-list">
-                        <div class="name">
-                            KIM SOI
-                        </div>
-                        <div class="mail">
-                            soyfully@gmail.com
-                        </div>
-                        <div class="phone">
-                            +82 10-3799-1219
-                        </div>
+                    <div class='title'>{{ menuJson.contact.title }}</div>
+                    <div class='sub-title'>
+                        <ul>
+                            <li>{{menuJson.contact.phone}}</li>
+                            <li>{{menuJson.contact.email}}</li>
+                        </ul>
+                        <ul>
+                            <li>{{menuJson.contact.name}}</li>
+                            <li>{{menuJson.contact.position}}</li>
+                        </ul>
                     </div>
                 </div>
             </div>

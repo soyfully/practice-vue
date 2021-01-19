@@ -1,18 +1,24 @@
 {
+    "menu": {
+        "contact": {
+            "title": "contact me",
+            "name": "KIM SOI",
+            "position": "Front-end Developer",
+            "email": "soyfully@gmail.com",
+            "phone": "+82 10 3799 1219"
+        }
+    },
     "profile": {
         "title": "Profile",
         "subTitle": {
-            "desc1": "JS / CSS 모션, 프레임워크 그리고 성능에 관심이 많습니다. ",
-            "desc2": "또한 플러그인 / 라이브러리의 사용을 필요 외엔 최소화하기 위해",
-            "desc3": "JS 에 대한 이해와 기본기를 다지려 노력하고 있습니다.",
+            "desc1": "2년차 주니어 프론트엔드 개발자입니다.",
+            "desc2": "Javascript, Typescript, Vue.js 에 관심이 많습니다.",
+            "desc3": "협업을 통해 오류를 잡아가는 과정을 좋아합니다. 또, 코드 리팩토링을 좋아합니다.",
             "desc4": "나아가 항상 새로운 시도를 할 수 있는 프론트엔드 개발자가 되고 싶습니다."
         },
         "information": {
             "title": "안녕하세요, 김소이입니다.",
-            "subTitle": "열어보세요 !",
-            "desc": [
-
-            ]
+            "subTitle": "열어보세요 !"
         },
         "resume": [
             {
@@ -50,7 +56,7 @@
         "subTitle": {
             "desc1": "회사를 다니며 진행한 프로젝트 중 몇 가지를 골라 정리했습니다.",
             "desc2": "그 외, 스터디 및 회사에서 수월한 프로젝트 진행을 위해",
-            "desc3": "만들어놓은 개인 작업물도 있습니다.",
+            "desc3": "만들어놓은 서브 프로젝트도 있습니다.",
             "desc4": "더 많은 프로젝트는",
             "desc5": "를 클릭해 주세요.",
             "link": "https://www.rocketpunch.com/@soyfully",

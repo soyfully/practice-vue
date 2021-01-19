@@ -35,12 +35,17 @@
                         </button>
                         <div class="acc-panel">
                             <div class="datatable-report">
-                                <!-- <div class="img">
-
-                                </div>
-                                <div class="text">
-                                   
-                                </div> -->
+                                <p>
+                                    <!-- {{ profileJson.information.desc }} -->
+                                    빠르게 발전하는 기술 속 뒤쳐지고싶지 않다는 욕심으로 여기까지 왔습니다.<br>
+                                    <br>
+                                    다양한 기술을 사용하는 프로젝트가 아니어도<br>
+                                    프론트엔드 개발자로서 어떻게든 살아남기 위해서 그간 typescript, vue 등 습득해왔습니다.<br>
+                                    <br>
+                                    2년간의 에이전시 생활동안 사수도, 동료도 없이 회사 프로젝트의 스크립트를 도맡아왔습니다.<br>
+                                    주로 브랜딩 사이트만 작업해온지라 다른 분들보다 조금 부족할 수 있습니다.<br>
+                                    하지만 혼자 해내온 시간만큼 사소한 것 하나 지나치지 않고 집요하며, 새로운 환경을 두려워하지 않습니다.
+                                </p>
                             </div>
                         </div>
                     </div>
