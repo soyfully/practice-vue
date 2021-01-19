@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import image from "../../assets/img/soynim.png"
+import image from "../../assets/soynim.png"
 
 export default {
     data: function () {
