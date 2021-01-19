@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Router from './router/router' // 라우터
-import App from './app/App' // app
+import App from '../src/app/App.vue' // app
 
 import './assets/reset.css'; // reset css
 import './assets/font.css'; // font css
 
-import jsonLabel from './assets/jsonLabel.json'; // font css
+import jsonLabel from './assets/jsonLabel.json';
 
 Vue.prototype.$jsonLabel = jsonLabel;
 
