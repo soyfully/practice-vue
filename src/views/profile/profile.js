@@ -15,6 +15,7 @@ export default {
     },
     mounted () {
         this.changeDefaultBackColor();
+        this.openFirstAccordionList();
         if (this.$store.state.isInitMotionState) {
 
             // return false;
@@ -25,7 +26,11 @@ export default {
             $('html, body').css('background-color', this.defaultColor);
         },
         openFirstAccordionList() {
+            const accordionBtn = $('.resume-accordion .acc-title').eq(0);
+            const accordionDesc = accordionBtn.next('.acc-panel');
 
+            accordionBtn.addClass('on');
+            accordionDesc.css('display', 'block');
         },
         accordionController(event) {
             const accordionBtn = $(event.currentTarget);

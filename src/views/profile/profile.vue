@@ -46,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="accordion">
+                <div class="accordion resume-accordion">
                     <div class="sub-title">Resume</div>
                     <div class="accordion-item" v-for="( resumeList, index ) in profileJson.resume" :key="index">
                         <button 
