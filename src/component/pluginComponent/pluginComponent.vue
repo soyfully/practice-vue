@@ -1,5 +1,5 @@
 <template>
-    <div class='popup-component' id='dongA'>
+    <div class='popup-component' id='plugIn'>
         <div class="popup-content-wrap">
             <div class='popup-content'>
                 <div class="content-start">
@@ -11,85 +11,55 @@
                         </div>
                     </div>
                     <div class='page-explain'>
-                        <div class='title'>DongA Pharm OTC Brand Website</div>
+                        <div class='title'> Custom Loading Icon UI Plugin</div>
                         <div class='sub-title'>
-                            동아제약 OTC 통합 브랜드 사이트 구축
+                            커스텀 로딩 아이콘 플러그인
                         </div>
                         <div class='explane'>
-                            모든 페이지의 스크립트 작성, 그리고 모션에 관련된 마크업을 진행했습니다. 반응형 웹 프로젝트로 진행이 되었고, 리사이징 시 나타날 수 있는 오류에 많은 신경을 썼습니다. 또, 기본적인 웹 접근성을 준수했습니다.<br>
+                            ajax 호출이나 컨텐츠 로딩 과정 등, 로딩 아이콘이 필요한 위치에 삽입하여 노출하는 기능. 원활한 협업을 위해 개인적으로 작업한 프로젝트입니다.<br>
                             <p>
-                                기여도 100% (스크립트) / 20% (퍼블리싱)
+                                기여도 100%
                             </p>
                         </div>
                     </div>
                     <div class="page-content">
                         <div class='content-section full-position'>
-                            <!-- <div class='img-cont'>
-                                <div class="img-wrap">
-                                    <img :src="eLife01" />
-                                </div>
-                                <div class="view-all-code">
-                                    + 전체 소스 보기
-                                </div>
-                            </div> -->
                             <div class='txt-container'>
                                 <div class="txt-wrap">
                                     <div class="title">
-                                        코드 재사용을 위한 모듈화
+                                        웹팩 첫 시작을 위한 프로젝트
                                     </div>
                                     <div class="explane">
-                                        같은 기능, 다른 UI, 또한 반응형 웹이었기에 그에 대응하기 위해 코드를 기능 별로 모듈화하였습니다.
-                                        custom data 를 활용해 각 요소의 인덱스를 정의하거나, 이벤트 바인딩 시 다양한 함수를 실행해야 하는 등 까다로운 조건들이 많았기에
-                                        모든 함수의 셀렉터, 인덱스 등 가변적 요소들은 파라미터를 받아와 실행하도록 작성했습니다.
-                                        계획적으로 모듈화한 코드 덕에 오류 대응, 또는 리사이징 시 재실행 같은 반응형 코드 작성이 수월했습니다.
+                                        webpack 경험을 위해 사용해보았습니다.
+                                        4가지의 로딩 아이콘을 각각의 ts, scss 파일로 모듈화하여 작업 후 하나의 스크립트 파일로 번들링합니다.
+                                        코드의 난독화, eslint, 다양한 webpack 플러그인 활용 등 webpack 의 대표적 기능을 경험했습니다.
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class='content-section full-position'>
-                            <!-- <div class='img-cont'>
-                                <div class="img-wrap">
-                                    <img :src="eLife01" />
-                                </div>
-                            </div> -->
                             <div class='txt-container'>
                                 <div class="txt-wrap">
                                     <div class="title">
-                                        문제 해결을 위한 플러그인 활용
+                                        타입스크립트 활용
                                     </div>
                                     <div class="explane">
-                                        프로젝트를 진행 중 겪은 시행착오를 해결하면서 배우게 된 것들이 많습니다.
-                                        반응형에서 빼놓을 수 없는 resize, scroll 이벤트의 중첩은 boolean check 으로 쉽게 방지할 수 있었지만,
-                                        mousewheel 중첩은 수많은 오류를 야기했고 깔끔한 해결을 위해 여러 방법을 적용해보며 진행하던 중
-                                        Lodash.js 의 debounce 를 활용해 문제를 해결하였습니다.
-                                        코드의 가독성 및 빠른 작업이 가능하고
-                                        npm 을 사용해 필요한 함수만 커스텀 하여 빌드 할 수 있으니 리소스를 불러올 때에 발생할 성능 이슈에도 문제가 없습니다.
+                                        그간 작업해온 class 를 모방한 javascript 패턴에서 벗어난 작업을 경험했습니다.
+                                        공통 기능을 담고있는 class 생성하여 각 타입별로 나뉘어있는 class 에 extends 하여 기능을 사용합니다.
+                                        interface 를 활용해 사용자의 커스텀 값을 파라미터로 받아오고, 그에 대한 타입 체크 등 typescript 의 대표적 기능을 경험했습니다.
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class='content-section full-position'>
-                            <!-- <div class='img-cont'>
-                                <div class="img-wrap">
-                                    <img :src="eLife01" />
-                                </div>
-                                <div class="view-all-code">
-                                    + 전체 소스 보기
-                                </div>
-                            </div> -->
                             <div class='txt-container'>
                                 <div class="txt-wrap">
                                     <div class="title">
-                                        기획에 충실한 코드 작성
+                                        제이쿼리 의존성 제거
                                     </div>
                                     <div class="explane">
-                                        리스트 외에 다른 곳에서 스크롤을 하더라도 리스트가 움직일 수 있게, 또 액티브 된 리스트는 상단에 위치할 수 있도록.
-                                        이 요건을 위해 수 많은 시행 착오를 경험했습니다. 그 중 최선책으로
-                                        swiper.js 를 사용하여 액티브 요소를 상단에 맞추는 것부터 시작으로
-                                        리스트와 그에 맞춰 바뀔 요소들의 인덱스 정의 및 모션 함수를 작성 후,
-                                        액티브 된 리스트의 인덱스를 받아와 필요한 함수에 적용해 재실행합니다.
-                                        mousewheel 이벤트를 활용해 스크롤 방향을 체크 후, 그 어디서 스크롤 하여도 swiper 를 상/하로 자유롭게 움직일 수 있게 제작하였습니다.
-                                        또한, mouseenter 시에도 같은 기능이 작동해야 하므로 모듈화된 함수를 해당 이벤트 발생 시 실행합니다.
+                                        편리하지만 무겁다면 무거운 jquery 에 여러 프로젝트를 진행하며 너무 익숙해지다보니 vanila Javascript 의 기초가 부족하다 생각했습니다.
+                                        자바스크립트의 기반을 다질겸, jquery 의존성을 제거하여 vanilaJS 로만 작성했습니다.
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +67,7 @@
                     </div>
 
                     <SubFooter 
-                        linkUrl='http://uxdev.etribe.co.kr/donga/html/main/main.html' 
+                        linkUrl='https://github.com/soyfully/loading-library' 
                         linkTitle='Go to site'
                     />
                 </div>

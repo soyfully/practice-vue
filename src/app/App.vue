@@ -5,7 +5,9 @@
     <div id="app">
         <MenuComponent />
         <router-view />
-        <ElifeComponent />
-        <DongaComponent />
+        <GenesisComponent />
+        <ElifeComponent ref='eLife'/>
+        <DongaComponent ref='dongA'/>
+        <pluginComponent />
     </div>
 </template>

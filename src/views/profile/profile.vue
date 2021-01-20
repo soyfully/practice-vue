@@ -81,7 +81,7 @@
             <SubFooter 
                 ref='subFooter'
                 linkUrl='https://www.linkedin.com/in/%EC%86%8C%EC%9D%B4-%EA%B9%80-139476204/' 
-                linkTitle='Go to Linkedin'
+                linkTitle='Download'
             />
         </div>
     </div>

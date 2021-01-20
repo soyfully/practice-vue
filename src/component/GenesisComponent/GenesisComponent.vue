@@ -1,5 +1,5 @@
 <template>
-    <div class='popup-component' id='dongA'>
+    <div class='popup-component' id='genesis'>
         <div class="popup-content-wrap">
             <div class='popup-content'>
                 <div class="content-start">
@@ -11,85 +11,58 @@
                         </div>
                     </div>
                     <div class='page-explain'>
-                        <div class='title'>DongA Pharm OTC Brand Website</div>
+                        <div class='title'>Hyundai Genesis BTO website</div>
                         <div class='sub-title'>
-                            동아제약 OTC 통합 브랜드 사이트 구축
+                            현대 제네시스 BTO 웹사이트 구축 / 운영
                         </div>
                         <div class='explane'>
-                            모든 페이지의 스크립트 작성, 그리고 모션에 관련된 마크업을 진행했습니다. 반응형 웹 프로젝트로 진행이 되었고, 리사이징 시 나타날 수 있는 오류에 많은 신경을 썼습니다. 또, 기본적인 웹 접근성을 준수했습니다.<br>
+                            페이지 내의 구성요소에 관련된 컴포넌트 작성 및 기능 개발을 담당했습니다. 각 자동차 별 데이터를 활용해 제작하는 프로젝트였기에 각 api 에서 넘겨주는 json 데이터와 vuex 상태 관리가 중요한 프로젝트였습니다.<br>
                             <p>
-                                기여도 100% (스크립트) / 20% (퍼블리싱)
+                                기여도 20%
                             </p>
                         </div>
                     </div>
                     <div class="page-content">
                         <div class='content-section full-position'>
-                            <!-- <div class='img-cont'>
-                                <div class="img-wrap">
-                                    <img :src="eLife01" />
-                                </div>
-                                <div class="view-all-code">
-                                    + 전체 소스 보기
-                                </div>
-                            </div> -->
                             <div class='txt-container'>
                                 <div class="txt-wrap">
                                     <div class="title">
-                                        코드 재사용을 위한 모듈화
+                                        Vue / Vuex 프로젝트 경험
                                     </div>
                                     <div class="explane">
-                                        같은 기능, 다른 UI, 또한 반응형 웹이었기에 그에 대응하기 위해 코드를 기능 별로 모듈화하였습니다.
-                                        custom data 를 활용해 각 요소의 인덱스를 정의하거나, 이벤트 바인딩 시 다양한 함수를 실행해야 하는 등 까다로운 조건들이 많았기에
-                                        모든 함수의 셀렉터, 인덱스 등 가변적 요소들은 파라미터를 받아와 실행하도록 작성했습니다.
-                                        계획적으로 모듈화한 코드 덕에 오류 대응, 또는 리사이징 시 재실행 같은 반응형 코드 작성이 수월했습니다.
+                                        기본적인 vue / vuex 를 활용한 운영을 경험했습니다.
+                                        vue 컴포넌트 생성 및 기능 제작시 api 통신 json 또는 public json 값을 사용해 dom 을 제어하거나,
+                                        각 자동차와 부품 스텝별로 보여줘하는 값들이 달랐기에 vuex store 에 저장된 상태값들을 가져와 필요시 vue 부모 / 자식 컴포넌트 사이의 데이터 통신을 하는 등
+                                        전반적인 vue 프로젝트 운영 담당했습니다.
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class='content-section full-position'>
-                            <!-- <div class='img-cont'>
-                                <div class="img-wrap">
-                                    <img :src="eLife01" />
-                                </div>
-                            </div> -->
                             <div class='txt-container'>
                                 <div class="txt-wrap">
                                     <div class="title">
-                                        문제 해결을 위한 플러그인 활용
+                                        타입스크립트 활용
                                     </div>
                                     <div class="explane">
-                                        프로젝트를 진행 중 겪은 시행착오를 해결하면서 배우게 된 것들이 많습니다.
-                                        반응형에서 빼놓을 수 없는 resize, scroll 이벤트의 중첩은 boolean check 으로 쉽게 방지할 수 있었지만,
-                                        mousewheel 중첩은 수많은 오류를 야기했고 깔끔한 해결을 위해 여러 방법을 적용해보며 진행하던 중
-                                        Lodash.js 의 debounce 를 활용해 문제를 해결하였습니다.
-                                        코드의 가독성 및 빠른 작업이 가능하고
-                                        npm 을 사용해 필요한 함수만 커스텀 하여 빌드 할 수 있으니 리소스를 불러올 때에 발생할 성능 이슈에도 문제가 없습니다.
+                                        타입스크립트를 활용해 vue 작업 시 class 기반의 component 로 작성해나갔습니다.
+                                        평소 vue 작성 스타일과는 다르게 prop, component, mixin 등등 데코레이터를 사용해 선언하는 등
+                                        타입스크립트를 다양하게 사용하여 프로젝트를 운영했습니다.
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class='content-section full-position'>
-                            <!-- <div class='img-cont'>
-                                <div class="img-wrap">
-                                    <img :src="eLife01" />
-                                </div>
-                                <div class="view-all-code">
-                                    + 전체 소스 보기
-                                </div>
-                            </div> -->
                             <div class='txt-container'>
                                 <div class="txt-wrap">
                                     <div class="title">
-                                        기획에 충실한 코드 작성
+                                        코드 마이그레이션
                                     </div>
                                     <div class="explane">
-                                        리스트 외에 다른 곳에서 스크롤을 하더라도 리스트가 움직일 수 있게, 또 액티브 된 리스트는 상단에 위치할 수 있도록.
-                                        이 요건을 위해 수 많은 시행 착오를 경험했습니다. 그 중 최선책으로
-                                        swiper.js 를 사용하여 액티브 요소를 상단에 맞추는 것부터 시작으로
-                                        리스트와 그에 맞춰 바뀔 요소들의 인덱스 정의 및 모션 함수를 작성 후,
-                                        액티브 된 리스트의 인덱스를 받아와 필요한 함수에 적용해 재실행합니다.
-                                        mousewheel 이벤트를 활용해 스크롤 방향을 체크 후, 그 어디서 스크롤 하여도 swiper 를 상/하로 자유롭게 움직일 수 있게 제작하였습니다.
-                                        또한, mouseenter 시에도 같은 기능이 작동해야 하므로 모듈화된 함수를 해당 이벤트 발생 시 실행합니다.
+                                        퍼블리싱 결과물인 html, css 코드를 vue, scss 코드로 마이그레이션하는 작업을 담당했습니다.
+                                        컴포넌트로 만들어야하는 부분과 라우터를 사용해 화면단을 띄워줘야하는 부분 등 여러가지 상황을 판단하여 제작했습니다.
+                                        주로 개발에서 넘겨주는 json 을 활용해 vue 조건, 반복 랜더링 또는 텍스트 데이터 바인딩하여 완성하고
+                                        typescript 로 해당 기능을 작업하는 등의 작업이었습니다.
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +70,7 @@
                     </div>
 
                     <SubFooter 
-                        linkUrl='http://uxdev.etribe.co.kr/donga/html/main/main.html' 
+                        linkUrl='https://www.genesis.com/kr/ko/models/luxury-suv-genesis/gv80/bto/powertrains?code=BBBBBBB&packages=' 
                         linkTitle='Go to site'
                     />
                 </div>
@@ -118,13 +91,10 @@
         },
         components: { SubFooter },
 
-        mounted () {
-
-        },
         methods: {
             closeTargetModal (event) {
                 const thisComponent = $(this.$el);
-                
+
                 $(event.target).parents('.popup-content').removeClass('open').addClass('close');
 
                 setTimeout(function () {
@@ -208,9 +178,7 @@
         font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 1vw;
     }
 
-    .content-section { 
-        margin-top: 13vw;
-    }
+    .content-section { margin-top: 18vw;}
     .content-section:after{
         content:'';
         display:block;
@@ -290,33 +258,14 @@
     }
 
 
-    .popup-component:after{
-        content:''; 
-        display:block; 
-        position:absolute; 
-        bottom:0px; 
-        right:0px; 
-        z-index:10; 
-        width:100%; 
-        height:0%; 
-        background:#fff; 
-        transition: all 0.8s cubic-bezier(.4,.31,.19,1)
-    }
-    .popup-content.open {
-        animation:detail_open_animate 1s forwards cubic-bezier(.66,0,.34,1); 
-        display: block;
-    }
-    .popup-component.open:after{
-        height: 100%;
-    }
+    .popup-component:after{content:''; display:block; position:absolute; bottom:0px; right:0px; z-index:10; width:100%; height:0%; background:#fff; transition: all 0.8s cubic-bezier(.4,.31,.19,1)}
+    .popup-component.open:after{height: 100%;}
+    .popup-content.open {animation:detail_open_animate 1s forwards cubic-bezier(.66,0,.34,1); display: block;}
     @keyframes detail_open_animate {
         0% {transform:translate(0,100%);}
         100% {transform:translate(0, 0%);}
     }
-    .popup-content.close {
-        animation:detail_close_animate 1s forwards cubic-bezier(.66,0,.34,1); 
-        display: block;
-    }
+    .popup-content.close {animation:detail_close_animate 1s forwards cubic-bezier(.66,0,.34,1); display: block;}
     @keyframes detail_close_animate {
         0% {transform:translate(0, 0%);}
         100% {transform:translate(0, 100%);}

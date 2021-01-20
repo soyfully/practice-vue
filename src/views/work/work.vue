@@ -11,7 +11,7 @@
                         {{ workJson.subTitle.desc1 }} <br>
                         {{ workJson.subTitle.desc2 }} <br>
                         {{ workJson.subTitle.desc3 }} <br>
-                        {{ workJson.subTitle.desc4 }} <a v-bind:href="workJson.subTitle.link" target='_blank'>{{ workJson.subTitle.linkText }}</a>{{ workJson.subTitle.desc5 }}
+                        {{ workJson.subTitle.desc4 }}
                     </div>
                 </div>
                 <div class='page-content'>
@@ -27,7 +27,7 @@
                         </div>
                         <div class="list-wrap swiper-container">
                             <div class="wrap swiper-wrapper">
-                                <div class="list swiper-slide" v-for="( list, index ) in workJson.workList" :key="index">
+                                <div class="list swiper-slide" v-for="( list, index ) in workJson.workList" :key="index" @click.stop='openTargetModal(list.component)'>
                                     <div class="list-title">
                                         {{ list.title }}
                                         <span>{{ list.subTitle }}</span>
@@ -35,7 +35,6 @@
                                     <div class="list-content">
                                         <div v-for="( skill, index ) in list.skill" :key="index">{{ skill }} </div>
                                     </div>
-                                    <a v-if="list.link" v-bind:href="list.link"></a>
                                 </div>
                             </div>
                         </div>

@@ -3,7 +3,7 @@
         <div class="popup-content-wrap">
             <div class='popup-content'>
                 <div class="content-start">
-                    <div class="popup-close-icon">
+                    <div class="popup-close-icon" @click.stop='closeTargetModal'>
                         <div class="icon">
                             <span class="line line-1"></span>
                             <span class="line line-2"></span>
@@ -121,6 +121,7 @@
 </template>
 
 <script>
+    import $ from 'jquery'
     import SubFooter from '../SubFooter/SubFooter.vue';
 
     export default {
@@ -131,9 +132,20 @@
         },
         components: { SubFooter },
 
-        mounted () {
+        methods: {
+            closeTargetModal (event) {
+                const thisComponent = $(this.$el);
 
-        },
+                $(event.target).parents('.popup-content').removeClass('open').addClass('close');
+
+                setTimeout(function () {
+                    $('.sub, .main').removeClass('move').addClass('reverse');
+                }, 200)
+                setTimeout(function () {
+                    thisComponent.removeClass('open');
+                }, 600)
+            }
+        }
     }
 </script>
 

@@ -22,15 +22,24 @@ export default {
                     observeParents: true,
                     observeSlideChildren: true,
                     mousewheel: true,
-                    grabCursor: true,
+                    // grabCursor: true,
                     freeMode: true,
                     freeModeSticky: true,
                     slidesPerView: 'auto',
                 })
             }, 0)
         },
-        openTargetModal() {
-
-        }
+        openTargetModal (target) {
+            if (!$(target)[0]) return false;
+    
+            $('.sub').removeClass('reverse').addClass('move');
+    
+            setTimeout(function () {
+                $(target).addClass('open');
+            }, 300)
+            setTimeout(function () {
+                $(target).find('.popup-content').removeClass('close').addClass('open').css('display', 'block');
+            }, 600)
+        },    
     },
 }
