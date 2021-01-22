@@ -27,11 +27,12 @@
                 "term": "2020.12. ~",
                 "desc": [
                     "Vue.js framework 기반 프로젝트 개발 경험",
-                    "Typescript class component 를 활용해 회사 스크립트 작성",
+                    "Typescript class component 를 활용해 스크립트 작성",
                     "Vue 코드 마이그레이션",
+                    "unity 에서 json 을 추출해 webgl 스크립트 유지 보수",
                     "css 전처리기 scss 를 이용한 프로젝트 진행",
                     "Git을 이용한 코드 형상관리",
-                    "API 통신 json 을 이용한 vue 제어 및 데이터 관리"
+                    "API 통신 json 을 이용한 Vue Dom 제어 및 데이터 관리"
                 ]
             },
             {

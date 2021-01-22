@@ -33,12 +33,10 @@
         mounted () {
             if (this.$store.state.isCurrentRouter == 'profile') {
                 this.$el.classList.add('is-profile');
+                $('#footer').addClass('profile-ver')
             } else {
                 this.$el.classList.remove('is-profile');
-            }
-            
-            if ($('html, body').hasClass('profile')) {
-                $('#footer').addClass('profile-ver');
+                $('#footer').removeClass('profile-ver')
             }
         },
     }

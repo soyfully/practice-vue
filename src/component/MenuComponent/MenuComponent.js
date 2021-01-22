@@ -13,7 +13,7 @@ export default {
         menuOpener() {
             const menuContent = $('.content');
 
-            $('.sub').removeClass('reverse').addClass('move');
+            $('.sub, .main').removeClass('reverse').addClass('move');
 
             setTimeout(function () {
                 $('.menu-component').addClass('open');
@@ -28,7 +28,7 @@ export default {
             menuContent.removeClass('open').addClass('close');
             
             setTimeout(function () {
-                $('.sub').removeClass('move').addClass('reverse');
+                $('.sub, .main').removeClass('move').addClass('reverse');
             }, 200)
             setTimeout(function () {
                 $('.menu-component').removeClass('open');
